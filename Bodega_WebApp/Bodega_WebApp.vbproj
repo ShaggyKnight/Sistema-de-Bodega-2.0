@@ -1,0 +1,2588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{735BD09F-0B29-46CE-9CA1-D68CC5AD328F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Bodega_WebApp</RootNamespace>
+    <AssemblyName>Bodega_WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Bodega_WebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Bodega_WebApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PublishDatabases>true</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.429, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.72.3.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.ReportingServices" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\ingresoCenabast.css" />
+    <Content Include="assets\imagenes\general\circle_plus.png" />
+    <Content Include="assets\imagenes\general\enConstruccion.gif" />
+    <Content Include="assets\imagenes\general\glyphicons_qrcode.png" />
+    <Content Include="clases\About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="assets\imagenes\general\cambiarClave.png" />
+    <Content Include="assets\imagenes\general\entrar.png" />
+    <Content Include="assets\imagenes\general\fondo.png" />
+    <Content Include="assets\imagenes\general\key.png" />
+    <Content Include="assets\imagenes\general\logo.png" />
+    <Content Include="assets\imagenes\general\servidor.png" />
+    <Content Include="assets\imagenes\general\users.png" />
+    <Content Include="componentes\accounting\accounting.js" />
+    <Content Include="componentes\bootstrap\css\bootstrap-glyphicons.css" />
+    <Content Include="componentes\bootstrap\css\bootstrap.css" />
+    <Content Include="componentes\bootstrap\css\bootstrap.min.css" />
+    <Content Include="componentes\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="componentes\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="componentes\bootstrap\img\iconos\glyphicons_160_imac.png" />
+    <Content Include="componentes\bootstrap\img\iconos\glyphicons_161_macbook.png" />
+    <Content Include="componentes\bootstrap\img\iconos\glyphicons_162_ipad.png" />
+    <Content Include="componentes\bootstrap\img\iconos\glyphicons_163_iphone.png" />
+    <Content Include="componentes\bootstrap\js\bootstrap.js" />
+    <Content Include="componentes\bootstrap\js\bootstrap.min.js" />
+    <Content Include="componentes\bootstrap\js\respond.min.js" />
+    <Content Include="componentes\fonts\code-bold\generator_config.txt" />
+    <Content Include="componentes\fonts\code-bold\specimen_files\code_bold-cleartype.png" />
+    <Content Include="componentes\fonts\code-bold\specimen_files\easytabs.js" />
+    <Content Include="componentes\fonts\code-bold\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="componentes\fonts\code-bold\specimen_files\specimen_stylesheet.css" />
+    <Content Include="componentes\fonts\code-light\generator_config.txt" />
+    <Content Include="componentes\fonts\code-light\specimen_files\code_light-cleartype.png" />
+    <Content Include="componentes\fonts\code-light\specimen_files\easytabs.js" />
+    <Content Include="componentes\fonts\code-light\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="componentes\fonts\code-light\specimen_files\specimen_stylesheet.css" />
+    <Content Include="componentes\glyphicons\archivos\css\filetypes.css" />
+    <Content Include="componentes\glyphicons\halflings\css\halflings.css" />
+    <Content Include="componentes\glyphicons\normal\css\glyphicons.css" />
+    <Content Include="componentes\glyphicons\social\css\social.css" />
+    <Content Include="componentes\imagenes\principal\logo_minsal.jpg" />
+    <Content Include="componentes\imagenes\slider\1.jpg" />
+    <Content Include="componentes\imagenes\slider\2.jpg" />
+    <Content Include="componentes\jkey\jkey.js" />
+    <Content Include="componentes\jquery.form\jquery.form.js" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\jquery-ui-1.10.3.custom.css" />
+    <Content Include="componentes\jquery.ui\css\ui-lightness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="componentes\jquery.ui\js\jquery-1.9.1.js" />
+    <Content Include="componentes\jquery.ui\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="componentes\jquery.ui\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="componentes\jquery\jquery.js" />
+    <Content Include="componentes\nivoslider\jquery.nivo.slider.pack.js" />
+    <Content Include="componentes\nivoslider\nivo-slider.css" />
+    <Content Include="componentes\nivoslider\themes\bar\arrows.png" />
+    <Content Include="componentes\nivoslider\themes\bar\bar.css" />
+    <Content Include="componentes\nivoslider\themes\bar\bullets.png" />
+    <Content Include="componentes\nivoslider\themes\bar\loading.gif" />
+    <Content Include="componentes\nivoslider\themes\dark\arrows.png" />
+    <Content Include="componentes\nivoslider\themes\dark\bullets.png" />
+    <Content Include="componentes\nivoslider\themes\dark\dark.css" />
+    <Content Include="componentes\nivoslider\themes\dark\loading.gif" />
+    <Content Include="componentes\nivoslider\themes\default\arrows.png" />
+    <Content Include="componentes\nivoslider\themes\default\bullets.png" />
+    <Content Include="componentes\nivoslider\themes\default\default.css" />
+    <Content Include="componentes\nivoslider\themes\default\loading.gif" />
+    <Content Include="componentes\nivoslider\themes\light\arrows.png" />
+    <Content Include="componentes\nivoslider\themes\light\bullets.png" />
+    <Content Include="componentes\nivoslider\themes\light\light.css" />
+    <Content Include="componentes\nivoslider\themes\light\loading.gif" />
+    <Content Include="componentes\w2ui1.4\w2ui-1.4.1.css" />
+    <Content Include="componentes\w2ui1.4\w2ui-1.4.1.js" />
+    <Content Include="componentes\w2ui1.4\w2ui-1.4.1.min.css" />
+    <Content Include="componentes\w2ui1.4\w2ui-1.4.1.min.js" />
+    <Content Include="componentes\w2ui\w2ui-1.3.2.css" />
+    <Content Include="componentes\w2ui\w2ui-1.3.2.js" />
+    <Content Include="generadorQR\Despachos\PorCanje\QR_PorCanje.aspx" />
+    <Content Include="generadorQR\Despachos\PrestamoOtrasInstituciones\QR_PrestamoOtrasInstitu.aspx" />
+    <Content Include="generadorQR\Despachos\XDevolucionDePrestamo\QR_XDevolucionDePrestamo.aspx" />
+    <Content Include="generadorQR\Recepcion\DevolucionxNroPedido\QR_RecepcionxNroPedido.aspx" />
+    <Content Include="generadorQR\Recepcion\DevolucionxPrestamo\QR_DevolucionxPrestamo.aspx" />
+    <Content Include="generadorQR\Recepcion\DevolucionxUsuario\QR_DevolXUsuario.aspx" />
+    <Content Include="generadorQR\Recepcion\ProgramaxMinsal\QR_ProgramaxMinsal.aspx" />
+    <Content Include="generadorQR\Recepcion\RecepcionXCanje\QR_RecepcionXCanje.aspx" />
+    <Content Include="generadorQR\Recepcion\RecepcionxDonacion\QR_RecepcionxDonacion.aspx" />
+    <Content Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\QR_RecepXSolicitudPrestamo.aspx" />
+    <Content Include="generadorQR\Recepcion\UsuariosProveedores\QR_RecepcionDesdeProveedores.aspx" />
+    <Content Include="paginas\CENABAST\RercepcionCenabast.aspx" />
+    <Content Include="paginas\Despachos\DespachoAUsuarios.aspx" />
+    <Content Include="paginas\Despachos\DespachosXTransferencia.aspx" />
+    <Content Include="paginas\Despachos\DevolucionXTransferencia.aspx" />
+    <Content Include="paginas\Despachos\ModificacionDespacho.aspx" />
+    <Content Include="paginas\Despachos\PorCanje.aspx" />
+    <Content Include="paginas\Despachos\PorDevolucionDePrestamo.aspx" />
+    <Content Include="paginas\Despachos\PrestamoOtrasInstituciones.aspx" />
+    <Content Include="paginas\Recepciones\detalleMateriales.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="paginas\cenabast.aspx" />
+    <Content Include="paginas\index.aspx" />
+    <Content Include="paginas\Recepciones\DevolucionXNumeroPedido.aspx" />
+    <Content Include="paginas\Recepciones\DevolucionxPrestamo.aspx" />
+    <Content Include="paginas\Recepciones\DevolucionxUsuarios.aspx" />
+    <Content Include="paginas\Recepciones\DownloadExcelGuiasFactura.aspx" />
+    <Content Include="paginas\Recepciones\FacturasaGuia.aspx" />
+    <Content Include="paginas\Recepciones\facturasAGuiasDespacho.aspx" />
+    <Content Include="paginas\Recepciones\ProgramaxMinsal.aspx" />
+    <Content Include="paginas\Recepciones\RecepcionxCanje.aspx" />
+    <Content Include="paginas\Recepciones\RecepcionxDonacion.aspx" />
+    <Content Include="paginas\Recepciones\RecepcionxPrestamo.aspx" />
+    <Content Include="paginas\Recepciones\RecepcionxSolicitudPrestamo.aspx" />
+    <Content Include="paginas\Recepciones\UsuariosProveedores.aspx" />
+    <Content Include="paginas\inventarioreport.aspx" />
+    <Content Include="paginas\despachoreport.aspx" />
+    <Content Include="paginas\Reportes\AjusteExistencias.aspx" />
+    <Content Include="paginas\Reportes\AjusteMaterial.aspx" />
+    <Content Include="paginas\Reportes\BincardGeneral.aspx" />
+    <Content Include="paginas\Reportes\ConsumoMensual\ConsumoXBodegaStock.aspx" />
+    <Content Include="paginas\Reportes\ConsumoMensual\ConsumoXCCosto.aspx" />
+    <Content Include="paginas\Reportes\ConsumoMensual\ProgramaDeCompra.aspx" />
+    <Content Include="paginas\Reportes\Despacho\DespachoAUsuarios.aspx" />
+    <Content Include="paginas\Reportes\Despacho\DespachoMandatoCENABAST.aspx" />
+    <Content Include="paginas\Reportes\Despacho\DespachoXPauta.aspx" />
+    <Content Include="paginas\Reportes\Despacho\DespachoXServicio.aspx" />
+    <Content Include="paginas\Reportes\EstadosOrdenCompra.aspx" />
+    <Content Include="paginas\Reportes\FVto_PeriodoMaterial.aspx" />
+    <Content Include="paginas\Reportes\Inventario\InventarioXFamilia.aspx" />
+    <Content Include="paginas\Reportes\Inventario\InventarioXItem.aspx" />
+    <Content Include="paginas\Reportes\Inventario\Inventario_RealExistencia.aspx" />
+    <Content Include="paginas\Reportes\MaterialFarmaco_SinMov.aspx" />
+    <Content Include="paginas\Reportes\OCxNroFactura.aspx" />
+    <Content Include="paginas\Reportes\PedidosNoPlanificadosXBodega.aspx" />
+    <Content Include="paginas\Reportes\Stock_Min_Max.aspx" />
+    <Content Include="paginas\Reportes\Transferencias\ConsolidadoMensualTransf.aspx" />
+    <Content Include="paginas\Reportes\Transferencias\TransferenciasEntreBodegas.aspx" />
+    <Content Include="paginas\StockEmergencia\StockEmergencia.aspx" />
+    <Content Include="paginas\transferenciareport.aspx" />
+    <Content Include="reportes\Despachos\DespachoUsuarios\Rpt_DesapchoAUsuarios.aspx" />
+    <Content Include="reportes\Despachos\DespXCanje\RptVentana_DespXCanje.aspx" />
+    <Content Include="reportes\Despachos\DespXPrestamo\RptVentana_DevolucionXPrestamo.aspx" />
+    <Content Include="reportes\Despachos\PrestamoInstituciones\RptVentana_PrestInstituciones.aspx" />
+    <Content Include="reportes\Despachos\Transferencia\Rpt_DespachoXTransferencia.aspx" />
+    <Content Include="reportes\Recepciones\DesdeProveedores\NotaCredito\Rpt_RecepDP_NCReport.aspx" />
+    <Content Include="reportes\Recepciones\DesdeProveedores\Rpt_RecepcionDesdeProveedores_Report.aspx" />
+    <Content Include="reportes\Recepciones\deUsuarios\Rpt_Recepcion_deUsuarios.aspx" />
+    <Content Include="reportes\Recepciones\porNroPedido\Rpt_Recpecion_porNroPedido.aspx" />
+    <Content Include="reportes\Recepciones\ProgramaxMinsal\RptVentana_ProgramaMinsal.aspx" />
+    <Content Include="reportes\Recepciones\RecepXCanje\RptVentana_xCanje.aspx" />
+    <Content Include="reportes\Recepciones\RecepXSoliPrestamo\RptVentana_RecepXSoliPrestamo.aspx" />
+    <Content Include="reportes\Recepciones\xDevolucionDePrestamo\RptVentana_xDevoluDePrestamo.aspx" />
+    <Content Include="reportes\Recepciones\xDonacion\RptVentana_xDonacion.aspx" />
+    <Content Include="reportes\Reportes\AjusteExistencias\Rpt_AjusteExistencia_viewAjuste.aspx" />
+    <Content Include="reportes\Reportes\AjusteMaterial\RptVentana_AjusteMaterial.aspx" />
+    <Content Include="reportes\Reportes\BinCard\Report_Bincard.aspx" />
+    <Content Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\Report_ConsXBodegaStock.aspx" />
+    <Content Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\Report_ConsumoXCCosto.aspx" />
+    <Content Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\Report_ProgramaCompra.aspx" />
+    <Content Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\Report_DespaMandatoCENABAST.aspx" />
+    <Content Include="reportes\Reportes\Despacho\DespachoXPauta\Report_DespachoXPauta.aspx" />
+    <Content Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\Report_DespaXServicio_D1CC.aspx" />
+    <Content Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\Report_DespaXServicio_R1CC.aspx" />
+    <Content Include="reportes\Reportes\EstadosOrdenCompra\Report_EstadosOC.aspx" />
+    <Content Include="reportes\Reportes\FVto_PeriodoMaterial\Report_FVto_PeriodoMaterial.aspx" />
+    <Content Include="reportes\Reportes\Inventario\InventarioRealExistencia\Report_InveRealExistencia.aspx" />
+    <Content Include="reportes\Reportes\Inventario\InventarioXFamilia\Report_InveXFamilia.aspx" />
+    <Content Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\Report_InveXItem.aspx" />
+    <Content Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\Report_InveXItem2.aspx" />
+    <Content Include="reportes\Reportes\MaterialFarmaco_SinMov\Report_MatFar_SinMov.aspx" />
+    <Content Include="reportes\Reportes\PedidosNoPlanificados\Report_PedidoNoPlanificado.aspx" />
+    <Content Include="reportes\Reportes\Stock_Min_Max\Repot_StockCritico_MinMax.aspx" />
+    <Content Include="reportes\Reportes\Transferencias\ConsolidadoMensual\Report_ConsolidadoMensualTBod.aspx" />
+    <Content Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegas.aspx" />
+    <Content Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegasDetalle.aspx" />
+    <Content Include="reportes\StockEmergencia\Report_StockEmergencia.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="paginas\Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clases\About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="clases\logica\CENABAST\ListaMaterialesRecepCenabast.vb" />
+    <Compile Include="clases\logica\CENABAST\MaterialRecepCenabast.vb" />
+    <Compile Include="clases\logica\Despachos\AUsuarios\DatosFormDespachoUsuarios.vb" />
+    <Compile Include="clases\logica\Despachos\AUsuarios\DespachoHaciaUsuarios.vb" />
+    <Compile Include="clases\logica\Despachos\AUsuarios\ListaMaterialesDespachoUsuarios.vb" />
+    <Compile Include="clases\logica\Despachos\AUsuarios\ListaPedidosDespUsuarios.vb" />
+    <Compile Include="clases\logica\Despachos\AUsuarios\MaterialPedidoUsuarios.vb" />
+    <Compile Include="clases\logica\Despachos\DevolucionXTransferencia\DataDevoXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\DevolucionXTransferencia\DatosGridBuscar_DevoXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\DevolucionXTransferencia\Encabezado_DevoXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\DevolucionXTransferencia\ListaDevolucionXTransferecia.vb" />
+    <Compile Include="clases\logica\Despachos\ModificacionDespachos\DespachoModDespachos.vb" />
+    <Compile Include="clases\logica\Despachos\ModificacionDespachos\ListaDespachosModDespachos.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\DataDespachoXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\DatosFormDespachoTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\DespachoXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\DetalleMaterialDespXTransferencia.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\ListaDespachosXTransferecia.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\ListaDetallesMatDespXTransfer.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\ListaMaterialesDespXTransfer.vb" />
+    <Compile Include="clases\logica\Despachos\PorTransferencia\MaterialDespXTransferencia.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\DespachoNPedido.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\DespachoNPedidoPopUp.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\DetalleMaterialDevolNPedido.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\ListaDespachosNPedido.vb" />
+    <Compile Include="clases\logica\Despachos\PorDevolucionDePrestamo\historialArticulos_XDevolucionDePrestamo.vb" />
+    <Compile Include="clases\logica\Despachos\PorDevolucionDePrestamo\ListaDeArticulosHistorial_XDevolucionDePrestamo.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ArticulosDetalleGrid1DespOtrasInst.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ListaDeFechaDespacho.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ListaDetalleArticulos.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ResponseDateListDespacho.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\ListaDespachosNPedidoPopUp.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXNroPedido\ListaDetalleMatsDevolNPedido.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ArticulosDetalleGrid1_DevolucionxPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\FechaGrid_DevoXPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ListaDetalleArticulos_DevolucionxPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ResponseFechaENLista.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\DevolucionUsuario.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\ListaDevolucionUsuario.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\ListaMaterialesDevXusuarios.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\Lista_FechaServidor.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\MaterialDevXUsuario.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionXUsuarios\ResponseFormFecha.vb" />
+    <Compile Include="clases\logica\Recepciones\FacturasAGuias\GuiaFactura.vb" />
+    <Compile Include="clases\logica\Recepciones\FacturasAGuias\ListaGuiasFactura.vb" />
+    <Compile Include="clases\logica\Despachos\PorCanjeDespacho\HistorialCanjesDespachoXCanje.vb" />
+    <Compile Include="clases\logica\Despachos\PorCanjeDespacho\ListaHistorialGrid2DespachoXCanje.vb" />
+    <Compile Include="clases\logica\Despachos\PorCanjeDespacho\ListaProveedores.vb" />
+    <Compile Include="clases\logica\Despachos\PorCanjeDespacho\ResponseListProveedores.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ArticulosGrid1DespOtrasInst.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ArticulosGrid2xDespOtrasInst.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ListaArticulosGrid1DespOtrasInst.vb" />
+    <Compile Include="clases\logica\Despachos\PrestamoOtrasInstituciones\ListaGrid2HistoricoxDespOtrasInst.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ArticulosGrid1xPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ArticulosGrid1xPrestamoAntiguo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ArticulosGrid2xPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ListaDevoPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ListaDevoPrestamoAntiguo.vb" />
+    <Compile Include="clases\logica\Recepciones\DevolucionxPrestamo\ListaGrid2HistoricoxPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\ProgramaxMinsal\historialDonacionesProgramaMinsal.vb" />
+    <Compile Include="clases\logica\Recepciones\ProgramaxMinsal\ListaProgramas.vb" />
+    <Compile Include="clases\logica\Recepciones\ProgramaxMinsal\listHistorialMinsal.vb" />
+    <Compile Include="clases\logica\Recepciones\ProgramaxMinsal\ResponseListProgramas.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\historialArticulosRecepcionxCanje.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\HistorialCanjesRecepcionXCanje.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\ListaCheckRecepcionxCanje.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\ListaHistorialGrid2RecepcionXCanje.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\ListaHistorialRecepcionxCanje.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxCanje\ResponseItemListCheck.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\FechasdelaLista.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\historialArticulos.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\historialDonaciones.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\InfoMateriales_RecepxDonacion.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\ListaBodega.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\ListaDeArticulosDeHistorial.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\ListadeInfoMateriales_RecepxDonacion.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\listHistorial.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\ResponseFormDateList.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxDonacion\ResponseItemList.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\Bodega.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxPrestamo\HistorialDonacionesRecepXSolicitudPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxPrestamo\ListaHistorialGrid2RecepXSolicitudPrestamo.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxPrestamo\ListaInstituciones.vb" />
+    <Compile Include="clases\logica\Recepciones\RecepcionxPrestamo\ResponseListaInstituciones.vb" />
+    <Compile Include="clases\logica\ControladorLogica.vb" />
+    <Compile Include="clases\logica\IngresoProducto.vb" />
+    <Compile Include="clases\logica\IngresoProductoDetalle.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\DetalleMaterialQR.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\DetallesMaterial.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaBodegas.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaBRECEP.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaDetalleMatQR.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaDetallesMaterial.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaMaterial.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaMaterialRecepcion.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaObjetosSelectBox.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaOrdenesBOC.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaOrdenesCompra.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ListaPeriodos.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\Material.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\ObjetoSelectBox.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\OCBusquedaPopUp.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\OrdenCompra.vb" />
+    <Compile Include="clases\logica\OrdenDeCompra.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\Periodo.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\RecepBusquedaPopUp.vb" />
+    <Compile Include="clases\logica\Recepciones\UsuariosProveedores\Recepcion.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteExistencias\ListaMovAjustes.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteExistencias\MovsAjuste.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteMaterial\ListaMaterialesAjuste.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteMaterial\ListaMotivoAjuste.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteMaterial\MaterialDetalleAjuste.vb" />
+    <Compile Include="clases\logica\Reportes\AjusteMaterial\MotivoAjuste.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ListaArticulos_BinCard.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ListaMateriales_BinCard.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ListaPeriodo.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ResponseList_Articulos_BinCard.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ResponseList_MaterialesBinCard.vb" />
+    <Compile Include="clases\logica\Reportes\BinCard\ResponseList_Periodo.vb" />
+    <Compile Include="clases\logica\Reportes\Despacho\DespachoXPauta\ListaCentroC_DespaXPauta.vb" />
+    <Compile Include="clases\logica\Reportes\Despacho\DespachoXPauta\ResponseList_CentroCostos.vb" />
+    <Compile Include="clases\logica\Reportes\EstadosOrdenCompra\ListaEstados_EstadosOC.vb" />
+    <Compile Include="clases\logica\Reportes\EstadosOrdenCompra\ListaProeedores_EstadosOC.vb" />
+    <Compile Include="clases\logica\Reportes\EstadosOrdenCompra\ResponseList_EstadosOC.vb" />
+    <Compile Include="clases\logica\Reportes\EstadosOrdenCompra\ResponseList_ProveedoresEstadosOC.vb" />
+    <Compile Include="clases\logica\Reportes\Inventario\InventarioXItem\ListaItems_InveXItem.vb" />
+    <Compile Include="clases\logica\Reportes\Inventario\InventarioXItem\ResponseList_ItemsInveXItems.vb" />
+    <Compile Include="clases\logica\Reportes\MaterialFarmaco_SinMov\ListaArticulos_MatFar_SinMov.vb" />
+    <Compile Include="clases\logica\Reportes\MaterialFarmaco_SinMov\ResponseList_Articulos_MatFar_SinMov.vb" />
+    <Compile Include="clases\logica\Reportes\OCxNroFactura\ListaOCxNroFactura.vb" />
+    <Compile Include="clases\logica\Reportes\OCxNroFactura\OCxFactura.vb" />
+    <Compile Include="clases\logica\StockEmergencia\ListaEstablecimientos.vb" />
+    <Compile Include="clases\logica\StockEmergencia\ListaFamiliaProductos.vb" />
+    <Compile Include="clases\logica\StockEmergencia\ResponseList_Establecimientos.vb" />
+    <Compile Include="clases\logica\StockEmergencia\ResponseList_FamiliaProductos.vb" />
+    <Compile Include="clases\persistencia\configuracion\BaseDatos.vb" />
+    <Compile Include="clases\persistencia\controladores\CENABAST\RecepCenabast\CenabastHandler.ashx.vb">
+      <DependentUpon>CenabastHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\AUsuarios\DataDespachoUsuarios.ashx.vb">
+      <DependentUpon>DataDespachoUsuarios.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\AUsuarios\getCorrelativo_DespachoHaciaUsuarios.ashx.vb">
+      <DependentUpon>getCorrelativo_DespachoHaciaUsuarios.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\DevolucionXTransferencia\DataDevolucionXTransferencia.ashx.vb">
+      <DependentUpon>DataDevolucionXTransferencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\DevolucionXTransferencia\getCorrelativo_DevolucionTransferencia.ashx.vb">
+      <DependentUpon>getCorrelativo_DevolucionTransferencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\ModificacionDespachos\DataModificacionDespacho.ashx.vb">
+      <DependentUpon>DataModificacionDespacho.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\saveDetalleMov_DespxCanje.ashx.vb">
+      <DependentUpon>saveDetalleMov_DespxCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorTransferencia\DataDespachoTransferencia.ashx.vb">
+      <DependentUpon>DataDespachoTransferencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorTransferencia\getCorrelativo_DespachoTransferencia.ashx.vb">
+      <DependentUpon>getCorrelativo_DespachoTransferencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\deleteTemp_DespPresOtrasInstituciones.ashx.vb">
+      <DependentUpon>deleteTemp_DespPresOtrasInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\GeneraInforme.ashx.vb">
+      <DependentUpon>GeneraInforme.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\AsocDevolXNroPedido\GetDatosDevXNroPedido.ashx.vb">
+      <DependentUpon>GetDatosDevXNroPedido.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getCorrelativoDespachoXCanje.ashx.vb">
+      <DependentUpon>getCorrelativoDespachoXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\saveCanjeDespachoXCanje.ashx.vb">
+      <DependentUpon>saveCanjeDespachoXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\buscaCorrelativo_Despacho_PorDevolucionDePrestamo.ashx.vb">
+      <DependentUpon>buscaCorrelativo_Despacho_PorDevolucionDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getArticulosGrid2_A_Grid1.ashx.vb">
+      <DependentUpon>getArticulosGrid2_A_Grid1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getCorrelativo_Desp_PorDevolucionDePrestamo.ashx.vb">
+      <DependentUpon>getCorrelativo_Desp_PorDevolucionDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getDatos_EncabezadoHistotico_PorDevoDePrestamo.ashx.vb">
+      <DependentUpon>getDatos_EncabezadoHistotico_PorDevoDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getHistorial_DetalleTemp_PorDevoDePrestamo.ashx.vb">
+      <DependentUpon>getHistorial_DetalleTemp_PorDevoDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getHistorial_Detalle_PorDevolucionDePrestamo.ashx.vb">
+      <DependentUpon>getHistorial_Detalle_PorDevolucionDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\saveDetalleMovimiento_PorDevoluDePrestamo.ashx.vb">
+      <DependentUpon>saveDetalleMovimiento_PorDevoluDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\savePrestamo_PorDevoluDePrestamo.ashx.vb">
+      <DependentUpon>savePrestamo_PorDevoluDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\saveTempRecep_PorDevolucionDePrestamo.ashx.vb">
+      <DependentUpon>saveTempRecep_PorDevolucionDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\buscaCorrelativoDespOtrasInstituciones.ashx.vb">
+      <DependentUpon>buscaCorrelativoDespOtrasInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getDetalleProductosDespOtrasInst.ashx.vb">
+      <DependentUpon>getDetalleProductosDespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getFechaServidorDespachos.ashx.vb">
+      <DependentUpon>getFechaServidorDespachos.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistorialDetalleProductosDespOtrasInst.ashx.vb">
+      <DependentUpon>getHistorialDetalleProductosDespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistorialTempDetalleProductosDespOtrasInst.ashx.vb">
+      <DependentUpon>getHistorialTempDetalleProductosDespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\saveTempOtrasInstituciones.ashx.vb">
+      <DependentUpon>saveTempOtrasInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\AsocFacturaAGuiaDespacho\getGuiasDespacho.ashx.vb">
+      <DependentUpon>getGuiasDespacho.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\cargaHistorialxFechaDespachoXCanje.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaDespachoXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\AsocFacturaAGuiaDespacho\getListaDatosSelect.ashx.vb">
+      <DependentUpon>getListaDatosSelect.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\cargaHistorialxNumeroDespachoXCanje.ashx.vb">
+      <DependentUpon>cargaHistorialxNumeroDespachoXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\BusquedaOCPopUp.ashx.vb">
+      <DependentUpon>BusquedaOCPopUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getInformacionADespachoXCanje.ashx.vb">
+      <DependentUpon>getInformacionADespachoXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\BusquedaRECPorUp.ashx.vb">
+      <DependentUpon>BusquedaRECPorUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getListaProveedores.ashx.vb">
+      <DependentUpon>getListaProveedores.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDataPopupForm.ashx.vb">
+      <DependentUpon>getDataPopupForm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\cargaHistorialxFechaDespOtrasInst.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaDespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getData_NotaCreditoPopUp.ashx.vb">
+      <DependentUpon>getData_NotaCreditoPopUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDatosOrdenCompra.ashx.vb">
+      <DependentUpon>getDatosOrdenCompra.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\cargaHistorialxNPrestamoDespOtrasInst.ashx.vb">
+      <DependentUpon>cargaHistorialxNPrestamoDespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getCorrelativoDespOtrasInstituciones.ashx.vb">
+      <DependentUpon>getCorrelativoDespOtrasInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistoricoArticulosAGrid1DespOtrasInst.ashx.vb">
+      <DependentUpon>getHistoricoArticulosAGrid1DespOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\saveDetalleMovimientoPresOtrasInst.ashx.vb">
+      <DependentUpon>saveDetalleMovimientoPresOtrasInst.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\savePrestamoDespOtrasInstituciones.ashx.vb">
+      <DependentUpon>savePrestamoDespOtrasInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDetalleMaterial.ashx.vb">
+      <DependentUpon>getDetalleMaterial.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getFechaServidor.ashx.vb">
+      <DependentUpon>getFechaServidor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getListaBodegas.ashx.vb">
+      <DependentUpon>getListaBodegas.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getMateriales.ashx.vb">
+      <DependentUpon>getMateriales.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\buscaCorrelativoRecep_DevolucionxPrestamo.ashx.vb">
+      <DependentUpon>buscaCorrelativoRecep_DevolucionxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\cargaHistorialxFechaPrestamo.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\cargaHistorialxNumeroPrestamo.ashx.vb">
+      <DependentUpon>cargaHistorialxNumeroPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getArticlosAGrid1xPrestamo.ashx.vb">
+      <DependentUpon>getArticlosAGrid1xPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getArticlosAGrid1xPrestamoAntiguo.ashx.vb">
+      <DependentUpon>getArticlosAGrid1xPrestamoAntiguo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getCorrelativoRecepDevoxPrestamo.ashx.vb">
+      <DependentUpon>getCorrelativoRecepDevoxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getDatos_EncabezadoHistotico_DevoxPrestamo.ashx.vb">
+      <DependentUpon>getDatos_EncabezadoHistotico_DevoxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getFechaServer_DevoXPrestamo.ashx.vb">
+      <DependentUpon>getFechaServer_DevoXPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getHistorial_DetalleTabla1Recep_DevoxPrestamo.ashx.vb">
+      <DependentUpon>getHistorial_DetalleTabla1Recep_DevoxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getHistorial_DetalleTempRecep_DevoxPrestamo.ashx.vb">
+      <DependentUpon>getHistorial_DetalleTempRecep_DevoxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveDetalleMovimiento_DevoluxPrestamo.ashx.vb">
+      <DependentUpon>saveDetalleMovimiento_DevoluxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveMovimiento_DevoluxPrestamo.ashx.vb">
+      <DependentUpon>saveMovimiento_DevoluxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveTempRecep_DevolucionxPrestamo.ashx.vb">
+      <DependentUpon>saveTempRecep_DevolucionxPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\DevolucionXUsuarios\DevolucionUsuariosHandler.ashx.vb">
+      <DependentUpon>DevolucionUsuariosHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\cargaHistorialxFechaPMinsal.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaPMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\cargaHistorialxNdonacionPMinsal.ashx.vb">
+      <DependentUpon>cargaHistorialxNdonacionPMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\getCorretativoMinsal.ashx.vb">
+      <DependentUpon>getCorretativoMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\getListaProgramas.ashx.vb">
+      <DependentUpon>getListaProgramas.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveDetalleMovimientoMinsal.ashx.vb">
+      <DependentUpon>saveDetalleMovimientoMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveDonacionMinsal.ashx.vb">
+      <DependentUpon>saveDonacionMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveMinsal.ashx.vb">
+      <DependentUpon>saveMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveMovimientoMinsal.ashx.vb">
+      <DependentUpon>saveMovimientoMinsal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\cargaHistorialxFechaRecepcionXCanje.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaRecepcionXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\cargaHistorialxNumeroRecepcionXCanje.ashx.vb">
+      <DependentUpon>cargaHistorialxNumeroRecepcionXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\CheckRecepcionxCanje.ashx.vb">
+      <DependentUpon>CheckRecepcionxCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\getCorrelativoRecepcionXCanje.ashx.vb">
+      <DependentUpon>getCorrelativoRecepcionXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\getHistorialArticulosRecepcionxCanje.ashx.vb">
+      <DependentUpon>getHistorialArticulosRecepcionxCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveDetalleMovimientoRecepcionXCanje.ashx.vb">
+      <DependentUpon>saveDetalleMovimientoRecepcionXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveMovimientoRecepcionXCanje.ashx.vb">
+      <DependentUpon>saveMovimientoRecepcionXCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveRecepCanje.ashx.vb">
+      <DependentUpon>saveRecepCanje.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\BuscarDonaciones.ashx.vb">
+      <DependentUpon>BuscarDonaciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\BuscarInfo_Materiales_RecepxDonacion.ashx.vb">
+      <DependentUpon>BuscarInfo_Materiales_RecepxDonacion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\cargaHistorialxFecha.ashx.vb">
+      <DependentUpon>cargaHistorialxFecha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\cargaHistorialxNumero.ashx.vb">
+      <DependentUpon>cargaHistorialxNumero.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getArticulosGrid2.ashx.vb">
+      <DependentUpon>getArticulosGrid2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getBusquedaXCodigo.ashx.vb">
+      <DependentUpon>getBusquedaXCodigo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getCorretativoDonacion.ashx.vb">
+      <DependentUpon>getCorretativoDonacion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getFechaServidor.ashx.vb">
+      <DependentUpon>getFechaServidor.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getLista.ashx.vb">
+      <DependentUpon>getLista.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveDetalleMovimiento.ashx.vb">
+      <DependentUpon>saveDetalleMovimiento.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveDonacion.ashx.vb">
+      <DependentUpon>saveDonacion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveGloDonacion.ashx.vb">
+      <DependentUpon>saveGloDonacion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveMovimiento.ashx.vb">
+      <DependentUpon>saveMovimiento.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\cargaHistorialxFechaRecpXSoliPrestamo.ashx.vb">
+      <DependentUpon>cargaHistorialxFechaRecpXSoliPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\cargaHistorialxNumeroRecpXSoliPrestamo.ashx.vb">
+      <DependentUpon>cargaHistorialxNumeroRecpXSoliPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getBusquedaxCodigoRecepxSoliPrestamo.ashx.vb">
+      <DependentUpon>getBusquedaxCodigoRecepxSoliPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getCorrelativoRecepxSolicitudPrestamo.ashx.vb">
+      <DependentUpon>getCorrelativoRecepxSolicitudPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getListaInstituciones.ashx.vb">
+      <DependentUpon>getListaInstituciones.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\savePrestamoRecepxSolicitudPrestamo.ashx.vb">
+      <DependentUpon>savePrestamoRecepxSolicitudPrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\configuracion\ControladorPersistencia.vb" />
+    <Compile Include="clases\persistencia\configuracion\Servidor.vb" />
+    <Compile Include="clases\persistencia\configuracion\Servidores.vb" />
+    <Compile Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\saveSolicitudDePrestamo.ashx.vb">
+      <DependentUpon>saveSolicitudDePrestamo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\AjusteMaterial\DataAjusteMaterial.ashx.vb">
+      <DependentUpon>DataAjusteMaterial.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\busca_Bodega_Material_Bincard.ashx.vb">
+      <DependentUpon>busca_Bodega_Material_Bincard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\getCorrelativo_Bincard.ashx.vb">
+      <DependentUpon>getCorrelativo_Bincard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\getListaArticulos_Bincard.ashx.vb">
+      <DependentUpon>getListaArticulos_Bincard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\getListaBodegas_Bincard.ashx.vb">
+      <DependentUpon>getListaBodegas_Bincard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\getListaMateriales_BincardGeneral.ashx.vb">
+      <DependentUpon>getListaMateriales_BincardGeneral.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\getListaPeriodos_BincardGeneral.ashx.vb">
+      <DependentUpon>getListaPeriodos_BincardGeneral.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\BinCard\SaveTemp_BinCard.ashx.vb">
+      <DependentUpon>SaveTemp_BinCard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Despacho\AUsuarios\DataRptDespachoAUsuarios.ashx.vb">
+      <DependentUpon>DataRptDespachoAUsuarios.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Despacho\DespachoXPauta\getListaCentroCosto.ashx.vb">
+      <DependentUpon>getListaCentroCosto.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getListaBodegas_EstadosOC.ashx.vb">
+      <DependentUpon>getListaBodegas_EstadosOC.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getListaEstados_EstadosOC.ashx.vb">
+      <DependentUpon>getListaEstados_EstadosOC.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getProveedores_EstadosOC.ashx.vb">
+      <DependentUpon>getProveedores_EstadosOC.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\FVto_PeriodoMaterial\getListaMateriales_FVto_PeriMate.ashx.vb">
+      <DependentUpon>getListaMateriales_FVto_PeriMate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Inventario\InventarioXFamilia\getListaFamilia_InveXFami.ashx.vb">
+      <DependentUpon>getListaFamilia_InveXFami.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Inventario\InventarioXItem\getListaItems_InvenXItem.ashx.vb">
+      <DependentUpon>getListaItems_InvenXItem.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\MaterialFarmaco_SinMov\getListaArticulos_MatFar_SinMov.ashx.vb">
+      <DependentUpon>getListaArticulos_MatFar_SinMov.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Stock_Min_Max\getCorrelativo_Stock_CriMinMax.ashx.vb">
+      <DependentUpon>getCorrelativo_Stock_CriMinMax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\Reportes\Transferencias\EntreBodegas\DataRptTransferenciasBodegas.ashx.vb">
+      <DependentUpon>DataRptTransferenciasBodegas.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\StockEmergencia\CallReport_StockEmergencia.ashx.vb">
+      <DependentUpon>CallReport_StockEmergencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\StockEmergencia\getListaEstablecimientos_StockEmergencia.ashx.vb">
+      <DependentUpon>getListaEstablecimientos_StockEmergencia.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\StockEmergencia\getListaFamliaProductos.ashx.vb">
+      <DependentUpon>getListaFamliaProductos.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\controladores\validaDetalleMaterial.ashx.vb">
+      <DependentUpon>validaDetalleMaterial.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="clases\persistencia\login\Permisos.vb" />
+    <Compile Include="clases\persistencia\login\UsuarioLogeado.vb" />
+    <Compile Include="clases\presentacion\Configuracion.vb" />
+    <Compile Include="clases\presentacion\ControladorPresentacion.vb" />
+    <Compile Include="clases\presentacion\Pagina.vb" />
+    <Compile Include="clases\webAplication\activarIVA.ashx.vb">
+      <DependentUpon>activarIVA.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PorCanje\dsQR_DespaXCanje.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_DespaXCanje.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PorCanje\QR_PorCanje.aspx.designer.vb">
+      <DependentUpon>QR_PorCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PorCanje\QR_PorCanje.aspx.vb">
+      <DependentUpon>QR_PorCanje.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PrestamoOtrasInstituciones\dsQR_PrestamoOtrasInstitu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_PrestamoOtrasInstitu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PrestamoOtrasInstituciones\QR_PrestamoOtrasInstitu.aspx.designer.vb">
+      <DependentUpon>QR_PrestamoOtrasInstitu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\PrestamoOtrasInstituciones\QR_PrestamoOtrasInstitu.aspx.vb">
+      <DependentUpon>QR_PrestamoOtrasInstitu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\XDevolucionDePrestamo\dsQR_XDevolucionDePrestamo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_XDevolucionDePrestamo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\XDevolucionDePrestamo\dsQR_XDevolucionDePrestamo.vb">
+      <DependentUpon>dsQR_XDevolucionDePrestamo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\XDevolucionDePrestamo\QR_XDevolucionDePrestamo.aspx.designer.vb">
+      <DependentUpon>QR_XDevolucionDePrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Despachos\XDevolucionDePrestamo\QR_XDevolucionDePrestamo.aspx.vb">
+      <DependentUpon>QR_XDevolucionDePrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxNroPedido\dsQR_DevolucionxNroPedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_DevolucionxNroPedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxNroPedido\QR_RecepcionxNroPedido.aspx.designer.vb">
+      <DependentUpon>QR_RecepcionxNroPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxNroPedido\QR_RecepcionxNroPedido.aspx.vb">
+      <DependentUpon>QR_RecepcionxNroPedido.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxPrestamo\dsQR_DevolucionxPrestamo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_DevolucionxPrestamo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxPrestamo\QR_DevolucionxPrestamo.aspx.designer.vb">
+      <DependentUpon>QR_DevolucionxPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxPrestamo\QR_DevolucionxPrestamo.aspx.vb">
+      <DependentUpon>QR_DevolucionxPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxUsuario\dsQR_DevolucionXUsuario.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_DevolucionXUsuario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxUsuario\QR_DevolXUsuario.aspx.designer.vb">
+      <DependentUpon>QR_DevolXUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\DevolucionxUsuario\QR_DevolXUsuario.aspx.vb">
+      <DependentUpon>QR_DevolXUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\ProgramaxMinsal\dsQR_ProgramaMinsal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_ProgramaMinsal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\ProgramaxMinsal\QR_ProgramaxMinsal.aspx.designer.vb">
+      <DependentUpon>QR_ProgramaxMinsal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\ProgramaxMinsal\QR_ProgramaxMinsal.aspx.vb">
+      <DependentUpon>QR_ProgramaxMinsal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionXCanje\dsQR_RecepcionXCanje.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_RecepcionXCanje.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionXCanje\QR_RecepcionXCanje.aspx.designer.vb">
+      <DependentUpon>QR_RecepcionXCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionXCanje\QR_RecepcionXCanje.aspx.vb">
+      <DependentUpon>QR_RecepcionXCanje.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionxDonacion\dsQR_RecepXDonacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_RecepXDonacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionxDonacion\QR_RecepcionxDonacion.aspx.designer.vb">
+      <DependentUpon>QR_RecepcionxDonacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepcionxDonacion\QR_RecepcionxDonacion.aspx.vb">
+      <DependentUpon>QR_RecepcionxDonacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\dsQR_RecepXSolicitudPrestamo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_RecepXSolicitudPrestamo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\QR_RecepXSolicitudPrestamo.aspx.designer.vb">
+      <DependentUpon>QR_RecepXSolicitudPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\QR_RecepXSolicitudPrestamo.aspx.vb">
+      <DependentUpon>QR_RecepXSolicitudPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\UsuariosProveedores\dsQR_RecepcionDesdeProveedores.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQR_RecepcionDesdeProveedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\UsuariosProveedores\QR_RecepcionDesdeProveedores.aspx.designer.vb">
+      <DependentUpon>QR_RecepcionDesdeProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generadorQR\Recepcion\UsuariosProveedores\QR_RecepcionDesdeProveedores.aspx.vb">
+      <DependentUpon>QR_RecepcionDesdeProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\CENABAST\RercepcionCenabast.aspx.designer.vb">
+      <DependentUpon>RercepcionCenabast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\CENABAST\RercepcionCenabast.aspx.vb">
+      <DependentUpon>RercepcionCenabast.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\DespachoAUsuarios.aspx.designer.vb">
+      <DependentUpon>DespachoAUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\DespachoAUsuarios.aspx.vb">
+      <DependentUpon>DespachoAUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\DespachosXTransferencia.aspx.designer.vb">
+      <DependentUpon>DespachosXTransferencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\DespachosXTransferencia.aspx.vb">
+      <DependentUpon>DespachosXTransferencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\DevolucionXTransferencia.aspx.designer.vb">
+      <DependentUpon>DevolucionXTransferencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\DevolucionXTransferencia.aspx.vb">
+      <DependentUpon>DevolucionXTransferencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\ModificacionDespacho.aspx.designer.vb">
+      <DependentUpon>ModificacionDespacho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\ModificacionDespacho.aspx.vb">
+      <DependentUpon>ModificacionDespacho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\PorCanje.aspx.designer.vb">
+      <DependentUpon>PorCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\PorCanje.aspx.vb">
+      <DependentUpon>PorCanje.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\PorDevolucionDePrestamo.aspx.designer.vb">
+      <DependentUpon>PorDevolucionDePrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\PorDevolucionDePrestamo.aspx.vb">
+      <DependentUpon>PorDevolucionDePrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Despachos\PrestamoOtrasInstituciones.aspx.designer.vb">
+      <DependentUpon>PrestamoOtrasInstituciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Despachos\PrestamoOtrasInstituciones.aspx.vb">
+      <DependentUpon>PrestamoOtrasInstituciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\detalleMateriales.aspx.designer.vb">
+      <DependentUpon>detalleMateriales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\detalleMateriales.aspx.vb">
+      <DependentUpon>detalleMateriales.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="paginas\cenabast.aspx.designer.vb">
+      <DependentUpon>cenabast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\cenabast.aspx.vb">
+      <DependentUpon>cenabast.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionXNumeroPedido.aspx.designer.vb">
+      <DependentUpon>DevolucionXNumeroPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionXNumeroPedido.aspx.vb">
+      <DependentUpon>DevolucionXNumeroPedido.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionxPrestamo.aspx.designer.vb">
+      <DependentUpon>DevolucionxPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionxPrestamo.aspx.vb">
+      <DependentUpon>DevolucionxPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionxUsuarios.aspx.designer.vb">
+      <DependentUpon>DevolucionxUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DevolucionxUsuarios.aspx.vb">
+      <DependentUpon>DevolucionxUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DownloadExcelGuiasFactura.aspx.designer.vb">
+      <DependentUpon>DownloadExcelGuiasFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\DownloadExcelGuiasFactura.aspx.vb">
+      <DependentUpon>DownloadExcelGuiasFactura.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\FacturasaGuia.aspx.designer.vb">
+      <DependentUpon>FacturasaGuia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\FacturasaGuia.aspx.vb">
+      <DependentUpon>FacturasaGuia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\facturasAGuiasDespacho.aspx.designer.vb">
+      <DependentUpon>facturasAGuiasDespacho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\facturasAGuiasDespacho.aspx.vb">
+      <DependentUpon>facturasAGuiasDespacho.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\ProgramaxMinsal.aspx.designer.vb">
+      <DependentUpon>ProgramaxMinsal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\ProgramaxMinsal.aspx.vb">
+      <DependentUpon>ProgramaxMinsal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxCanje.aspx.designer.vb">
+      <DependentUpon>RecepcionxCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxCanje.aspx.vb">
+      <DependentUpon>RecepcionxCanje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxDonacion.aspx.designer.vb">
+      <DependentUpon>RecepcionxDonacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxDonacion.aspx.vb">
+      <DependentUpon>RecepcionxDonacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxPrestamo.aspx.designer.vb">
+      <DependentUpon>RecepcionxPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxPrestamo.aspx.vb">
+      <DependentUpon>RecepcionxPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxSolicitudPrestamo.aspx.designer.vb">
+      <DependentUpon>RecepcionxSolicitudPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\RecepcionxSolicitudPrestamo.aspx.vb">
+      <DependentUpon>RecepcionxSolicitudPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Recepciones\UsuariosProveedores.aspx.designer.vb">
+      <DependentUpon>UsuariosProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Recepciones\UsuariosProveedores.aspx.vb">
+      <DependentUpon>UsuariosProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\inventarioreport.aspx.designer.vb">
+      <DependentUpon>inventarioreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\inventarioreport.aspx.vb">
+      <DependentUpon>inventarioreport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\despachoreport.aspx.designer.vb">
+      <DependentUpon>despachoreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\despachoreport.aspx.vb">
+      <DependentUpon>despachoreport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\AjusteExistencias.aspx.designer.vb">
+      <DependentUpon>AjusteExistencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\AjusteExistencias.aspx.vb">
+      <DependentUpon>AjusteExistencias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\AjusteMaterial.aspx.designer.vb">
+      <DependentUpon>AjusteMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\AjusteMaterial.aspx.vb">
+      <DependentUpon>AjusteMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\BincardGeneral.aspx.designer.vb">
+      <DependentUpon>BincardGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\BincardGeneral.aspx.vb">
+      <DependentUpon>BincardGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ConsumoXBodegaStock.aspx.designer.vb">
+      <DependentUpon>ConsumoXBodegaStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ConsumoXBodegaStock.aspx.vb">
+      <DependentUpon>ConsumoXBodegaStock.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ConsumoXCCosto.aspx.designer.vb">
+      <DependentUpon>ConsumoXCCosto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ConsumoXCCosto.aspx.vb">
+      <DependentUpon>ConsumoXCCosto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ProgramaDeCompra.aspx.designer.vb">
+      <DependentUpon>ProgramaDeCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\ConsumoMensual\ProgramaDeCompra.aspx.vb">
+      <DependentUpon>ProgramaDeCompra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoAUsuarios.aspx.designer.vb">
+      <DependentUpon>DespachoAUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoAUsuarios.aspx.vb">
+      <DependentUpon>DespachoAUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoMandatoCENABAST.aspx.designer.vb">
+      <DependentUpon>DespachoMandatoCENABAST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoMandatoCENABAST.aspx.vb">
+      <DependentUpon>DespachoMandatoCENABAST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoXPauta.aspx.designer.vb">
+      <DependentUpon>DespachoXPauta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoXPauta.aspx.vb">
+      <DependentUpon>DespachoXPauta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoXServicio.aspx.designer.vb">
+      <DependentUpon>DespachoXServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Despacho\DespachoXServicio.aspx.vb">
+      <DependentUpon>DespachoXServicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\EstadosOrdenCompra.aspx.designer.vb">
+      <DependentUpon>EstadosOrdenCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\EstadosOrdenCompra.aspx.vb">
+      <DependentUpon>EstadosOrdenCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\FVto_PeriodoMaterial.aspx.designer.vb">
+      <DependentUpon>FVto_PeriodoMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\FVto_PeriodoMaterial.aspx.vb">
+      <DependentUpon>FVto_PeriodoMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\InventarioXFamilia.aspx.designer.vb">
+      <DependentUpon>InventarioXFamilia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\InventarioXFamilia.aspx.vb">
+      <DependentUpon>InventarioXFamilia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\InventarioXItem.aspx.designer.vb">
+      <DependentUpon>InventarioXItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\InventarioXItem.aspx.vb">
+      <DependentUpon>InventarioXItem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\Inventario_RealExistencia.aspx.designer.vb">
+      <DependentUpon>Inventario_RealExistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Inventario\Inventario_RealExistencia.aspx.vb">
+      <DependentUpon>Inventario_RealExistencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\MaterialFarmaco_SinMov.aspx.designer.vb">
+      <DependentUpon>MaterialFarmaco_SinMov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\MaterialFarmaco_SinMov.aspx.vb">
+      <DependentUpon>MaterialFarmaco_SinMov.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\OCxNroFactura.aspx.designer.vb">
+      <DependentUpon>OCxNroFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\OCxNroFactura.aspx.vb">
+      <DependentUpon>OCxNroFactura.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\PedidosNoPlanificadosXBodega.aspx.designer.vb">
+      <DependentUpon>PedidosNoPlanificadosXBodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\PedidosNoPlanificadosXBodega.aspx.vb">
+      <DependentUpon>PedidosNoPlanificadosXBodega.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Stock_Min_Max.aspx.designer.vb">
+      <DependentUpon>Stock_Min_Max.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Stock_Min_Max.aspx.vb">
+      <DependentUpon>Stock_Min_Max.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Transferencias\ConsolidadoMensualTransf.aspx.designer.vb">
+      <DependentUpon>ConsolidadoMensualTransf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Transferencias\ConsolidadoMensualTransf.aspx.vb">
+      <DependentUpon>ConsolidadoMensualTransf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Reportes\Transferencias\TransferenciasEntreBodegas.aspx.designer.vb">
+      <DependentUpon>TransferenciasEntreBodegas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Reportes\Transferencias\TransferenciasEntreBodegas.aspx.vb">
+      <DependentUpon>TransferenciasEntreBodegas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\StockEmergencia\StockEmergencia.aspx.designer.vb">
+      <DependentUpon>StockEmergencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\StockEmergencia\StockEmergencia.aspx.vb">
+      <DependentUpon>StockEmergencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="paginas\transferenciareport.aspx.designer.vb">
+      <DependentUpon>transferenciareport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\transferenciareport.aspx.vb">
+      <DependentUpon>transferenciareport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRpt_DespachoAUsuarios.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.vb">
+      <DependentUpon>dsRpt_DespachoAUsuarios.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespachoUsuarios\Rpt_DesapchoAUsuarios.aspx.designer.vb">
+      <DependentUpon>Rpt_DesapchoAUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespachoUsuarios\Rpt_DesapchoAUsuarios.aspx.vb">
+      <DependentUpon>Rpt_DesapchoAUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespXCanje\RptVentana_DespXCanje.aspx.designer.vb">
+      <DependentUpon>RptVentana_DespXCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespXCanje\RptVentana_DespXCanje.aspx.vb">
+      <DependentUpon>RptVentana_DespXCanje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespXPrestamo\RptVentana_DevolucionXPrestamo.aspx.designer.vb">
+      <DependentUpon>RptVentana_DevolucionXPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Despachos\DespXPrestamo\RptVentana_DevolucionXPrestamo.aspx.vb">
+      <DependentUpon>RptVentana_DevolucionXPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Despachos\PrestamoInstituciones\RptVentana_PrestInstituciones.aspx.designer.vb">
+      <DependentUpon>RptVentana_PrestInstituciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Despachos\PrestamoInstituciones\RptVentana_PrestInstituciones.aspx.vb">
+      <DependentUpon>RptVentana_PrestInstituciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Despachos\Transferencia\Rpt_DespachoXTransferencia.aspx.designer.vb">
+      <DependentUpon>Rpt_DespachoXTransferencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Despachos\Transferencia\Rpt_DespachoXTransferencia.aspx.vb">
+      <DependentUpon>Rpt_DespachoXTransferencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\NotaCredito\dsRpt_RecepDP_NC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRpt_RecepDP_NC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\NotaCredito\Rpt_RecepDP_NCReport.aspx.designer.vb">
+      <DependentUpon>Rpt_RecepDP_NCReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\NotaCredito\Rpt_RecepDP_NCReport.aspx.vb">
+      <DependentUpon>Rpt_RecepDP_NCReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\Rpt_RecepcionDesdeProveedores_Report.aspx.designer.vb">
+      <DependentUpon>Rpt_RecepcionDesdeProveedores_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\Rpt_RecepcionDesdeProveedores_Report.aspx.vb">
+      <DependentUpon>Rpt_RecepcionDesdeProveedores_Report.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\DesdeProveedores\Rpt_RecpMateriales_DesdeProveedores.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_RecpMateriales_DesdeProveedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\deUsuarios\dsRpt_Recepcion_deUsuarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRpt_Recepcion_deUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\deUsuarios\Rpt_Recepcion_deUsuarios.aspx.designer.vb">
+      <DependentUpon>Rpt_Recepcion_deUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\deUsuarios\Rpt_Recepcion_deUsuarios.aspx.vb">
+      <DependentUpon>Rpt_Recepcion_deUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\porNroPedido\dsRpt_Recepcion_porNroPedido.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRpt_Recepcion_porNroPedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\porNroPedido\Rpt_Recpecion_porNroPedido.aspx.designer.vb">
+      <DependentUpon>Rpt_Recpecion_porNroPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\porNroPedido\Rpt_Recpecion_porNroPedido.aspx.vb">
+      <DependentUpon>Rpt_Recpecion_porNroPedido.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\ProgramaxMinsal\dsRPT_ProgramaMinsal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_ProgramaMinsal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\ProgramaxMinsal\RptVentana_ProgramaMinsal.aspx.designer.vb">
+      <DependentUpon>RptVentana_ProgramaMinsal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\ProgramaxMinsal\RptVentana_ProgramaMinsal.aspx.vb">
+      <DependentUpon>RptVentana_ProgramaMinsal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\RecepXCanje\RptVentana_xCanje.aspx.designer.vb">
+      <DependentUpon>RptVentana_xCanje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\RecepXCanje\RptVentana_xCanje.aspx.vb">
+      <DependentUpon>RptVentana_xCanje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\RecepXSoliPrestamo\RptVentana_RecepXSoliPrestamo.aspx.designer.vb">
+      <DependentUpon>RptVentana_RecepXSoliPrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\RecepXSoliPrestamo\RptVentana_RecepXSoliPrestamo.aspx.vb">
+      <DependentUpon>RptVentana_RecepXSoliPrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\xDevolucionDePrestamo\RptVentana_xDevoluDePrestamo.aspx.designer.vb">
+      <DependentUpon>RptVentana_xDevoluDePrestamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\xDevolucionDePrestamo\RptVentana_xDevoluDePrestamo.aspx.vb">
+      <DependentUpon>RptVentana_xDevoluDePrestamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Recepciones\xDonacion\dsRPT_xDonacion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_xDonacion.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="reportes\Recepciones\xDonacion\RptVentana_xDonacion.aspx.designer.vb">
+      <DependentUpon>RptVentana_xDonacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Recepciones\xDonacion\RptVentana_xDonacion.aspx.vb">
+      <DependentUpon>RptVentana_xDonacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteExistencias\dsRPT_AjusteExist.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_AjusteExist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteExistencias\dsRPT_AjusteExist.vb">
+      <DependentUpon>dsRPT_AjusteExist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteExistencias\Rpt_AjusteExistencia_viewAjuste.aspx.designer.vb">
+      <DependentUpon>Rpt_AjusteExistencia_viewAjuste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteExistencias\Rpt_AjusteExistencia_viewAjuste.aspx.vb">
+      <DependentUpon>Rpt_AjusteExistencia_viewAjuste.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteMaterial\RptVentana_AjusteMaterial.aspx.designer.vb">
+      <DependentUpon>RptVentana_AjusteMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\AjusteMaterial\RptVentana_AjusteMaterial.aspx.vb">
+      <DependentUpon>RptVentana_AjusteMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\BinCard\dsRPT_Bincard.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_Bincard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\BinCard\dsRPT_Bincard.vb">
+      <DependentUpon>dsRPT_Bincard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\BinCard\Report_Bincard.aspx.designer.vb">
+      <DependentUpon>Report_Bincard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\BinCard\Report_Bincard.aspx.vb">
+      <DependentUpon>Report_Bincard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\dsRPT_ConsXBodegaStock.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_ConsXBodegaStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\Report_ConsXBodegaStock.aspx.designer.vb">
+      <DependentUpon>Report_ConsXBodegaStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\Report_ConsXBodegaStock.aspx.vb">
+      <DependentUpon>Report_ConsXBodegaStock.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\dsRPT_ConsumoXCCosto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_ConsumoXCCosto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\Report_ConsumoXCCosto.aspx.designer.vb">
+      <DependentUpon>Report_ConsumoXCCosto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\Report_ConsumoXCCosto.aspx.vb">
+      <DependentUpon>Report_ConsumoXCCosto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\dsRPT_ProgramaCompra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_ProgramaCompra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\dsRPT_ProgramaCompra.vb">
+      <DependentUpon>dsRPT_ProgramaCompra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\Report_ProgramaCompra.aspx.designer.vb">
+      <DependentUpon>Report_ProgramaCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\Report_ProgramaCompra.aspx.vb">
+      <DependentUpon>Report_ProgramaCompra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\dsRPT_DespaMandatoCENABAST.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_DespaMandatoCENABAST.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\Report_DespaMandatoCENABAST.aspx.designer.vb">
+      <DependentUpon>Report_DespaMandatoCENABAST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\Report_DespaMandatoCENABAST.aspx.vb">
+      <DependentUpon>Report_DespaMandatoCENABAST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXPauta\dsRPT_DespaXPauta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_DespaXPauta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXPauta\Report_DespachoXPauta.aspx.designer.vb">
+      <DependentUpon>Report_DespachoXPauta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXPauta\Report_DespachoXPauta.aspx.vb">
+      <DependentUpon>Report_DespachoXPauta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\dsRPT_DespaXServicio_D1CC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_DespaXServicio_D1CC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\Report_DespaXServicio_D1CC.aspx.designer.vb">
+      <DependentUpon>Report_DespaXServicio_D1CC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\Report_DespaXServicio_D1CC.aspx.vb">
+      <DependentUpon>Report_DespaXServicio_D1CC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\dsRPT_DespaXServicio_R1CC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_DespaXServicio_R1CC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\Report_DespaXServicio_R1CC.aspx.designer.vb">
+      <DependentUpon>Report_DespaXServicio_R1CC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\Report_DespaXServicio_R1CC.aspx.vb">
+      <DependentUpon>Report_DespaXServicio_R1CC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\EstadosOrdenCompra\dsRPT_EstadosOC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_EstadosOC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\EstadosOrdenCompra\Report_EstadosOC.aspx.designer.vb">
+      <DependentUpon>Report_EstadosOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\EstadosOrdenCompra\Report_EstadosOC.aspx.vb">
+      <DependentUpon>Report_EstadosOC.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\FVto_PeriodoMaterial\dsRPT_FVto_PeriodoMaterial.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_FVto_PeriodoMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\FVto_PeriodoMaterial\Report_FVto_PeriodoMaterial.aspx.designer.vb">
+      <DependentUpon>Report_FVto_PeriodoMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\FVto_PeriodoMaterial\Report_FVto_PeriodoMaterial.aspx.vb">
+      <DependentUpon>Report_FVto_PeriodoMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioRealExistencia\dsRPT_InveRealExistencia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_InveRealExistencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioRealExistencia\Report_InveRealExistencia.aspx.designer.vb">
+      <DependentUpon>Report_InveRealExistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioRealExistencia\Report_InveRealExistencia.aspx.vb">
+      <DependentUpon>Report_InveRealExistencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXFamilia\dsRPT_InveXFamilia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_InveXFamilia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXFamilia\Report_InveXFamilia.aspx.designer.vb">
+      <DependentUpon>Report_InveXFamilia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXFamilia\Report_InveXFamilia.aspx.vb">
+      <DependentUpon>Report_InveXFamilia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\dsRPT_InveXItem.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_InveXItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\Report_InveXItem.aspx.designer.vb">
+      <DependentUpon>Report_InveXItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\Report_InveXItem.aspx.vb">
+      <DependentUpon>Report_InveXItem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\dsRPT_InveXItem2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_InveXItem2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\Report_InveXItem2.aspx.designer.vb">
+      <DependentUpon>Report_InveXItem2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\Report_InveXItem2.aspx.vb">
+      <DependentUpon>Report_InveXItem2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\MaterialFarmaco_SinMov\dsRPT_MatFar_SinMov.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_MatFar_SinMov.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\MaterialFarmaco_SinMov\dsRPT_MatFar_SinMov.vb">
+      <DependentUpon>dsRPT_MatFar_SinMov.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\MaterialFarmaco_SinMov\Report_MatFar_SinMov.aspx.designer.vb">
+      <DependentUpon>Report_MatFar_SinMov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\MaterialFarmaco_SinMov\Report_MatFar_SinMov.aspx.vb">
+      <DependentUpon>Report_MatFar_SinMov.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\PedidosNoPlanificados\dsRPT_PedidosNoPlanificados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_PedidosNoPlanificados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\PedidosNoPlanificados\Report_PedidoNoPlanificado.aspx.designer.vb">
+      <DependentUpon>Report_PedidoNoPlanificado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\PedidosNoPlanificados\Report_PedidoNoPlanificado.aspx.vb">
+      <DependentUpon>Report_PedidoNoPlanificado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Stock_Min_Max\dsRPT_StockCritico_Min_Max.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_StockCritico_Min_Max.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Stock_Min_Max\Repot_StockCritico_MinMax.aspx.designer.vb">
+      <DependentUpon>Repot_StockCritico_MinMax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Stock_Min_Max\Repot_StockCritico_MinMax.aspx.vb">
+      <DependentUpon>Repot_StockCritico_MinMax.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\ConsolidadoMensual\dsRPT_ConsolidadoMensualTransf.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_ConsolidadoMensualTransf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\ConsolidadoMensual\Report_ConsolidadoMensualTBod.aspx.designer.vb">
+      <DependentUpon>Report_ConsolidadoMensualTBod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\ConsolidadoMensual\Report_ConsolidadoMensualTBod.aspx.vb">
+      <DependentUpon>Report_ConsolidadoMensualTBod.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\EntreBodegas\dsRPT_TransfEntreBodegas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRPT_TransfEntreBodegas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegas.aspx.designer.vb">
+      <DependentUpon>Report_TransfEntreBodegas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegas.aspx.vb">
+      <DependentUpon>Report_TransfEntreBodegas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegasDetalle.aspx.designer.vb">
+      <DependentUpon>Report_TransfEntreBodegasDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\Reportes\Transferencias\EntreBodegas\Report_TransfEntreBodegasDetalle.aspx.vb">
+      <DependentUpon>Report_TransfEntreBodegasDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="reportes\StockEmergencia\dsStockEmergencia.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStockEmergencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\StockEmergencia\dsStockEmergencia.vb">
+      <DependentUpon>dsStockEmergencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\StockEmergencia\Report_StockEmergencia.aspx.designer.vb">
+      <DependentUpon>Report_StockEmergencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\StockEmergencia\Report_StockEmergencia.aspx.vb">
+      <DependentUpon>Report_StockEmergencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="generadorQR\Despachos\PorCanje\QR_PorCanje.rdlc" />
+    <EmbeddedResource Include="generadorQR\Despachos\PrestamoOtrasInstituciones\QR_PrestamoOtrasInstitu.rdlc" />
+    <EmbeddedResource Include="generadorQR\Despachos\XDevolucionDePrestamo\QR_XDevolucionDePrestamo.rdlc" />
+    <EmbeddedResource Include="generadorQR\Despachos\XDevolucionDePrestamo\QR_XDevolucionDePrestamo2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\DevolucionxNroPedido\QR_DevolxNroPedido.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\DevolucionxPrestamo\QR_DevolucionxPrestamo.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\DevolucionxPrestamo\QR_DevolucionxPrestamo2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\DevolucionxUsuario\QR_DevolucionXUsuario.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\ProgramaxMinsal\QR_ProgramaMinsal.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\ProgramaxMinsal\QR_ProgramaMinsal2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepcionXCanje\QR_RecepcionXCanje.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepcionXCanje\QR_RecepcionXCanje2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepcionxDonacion\QR_RecepXDonacion.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepcionxDonacion\QR_RecepXDonacion2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\QR_RecepXSolicitudPrestamo.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\QR_RecepXSolicitudPrestamo2.rdlc" />
+    <EmbeddedResource Include="generadorQR\Recepcion\UsuariosProveedores\QR_RecepcionDesdeProveedores.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Despachos\DespachoUsuarios\RPT_DespachoAUsuarios.rdlc" />
+    <EmbeddedResource Include="reportes\Despachos\DespXCanje\RPT_DespPorCanje.rdlc" />
+    <EmbeddedResource Include="reportes\Despachos\DespXPrestamo\RPT_DevolucionDePrestamo.rdlc" />
+    <EmbeddedResource Include="reportes\Despachos\PrestamoInstituciones\RPT_PrestamoInstituciones.rdlc" />
+    <EmbeddedResource Include="reportes\Despachos\Transferencia\RPT_DespaTransferencia.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\DesdeProveedores\NotaCredito\Rpt_RecepDP_NotaCredito.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\DesdeProveedores\Rpt_RecepMateriales_DesdeProveedores.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\deUsuarios\RPT_RecepcionUsuarios.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\porNroPedido\RPT_Recepcion_porNroPedido.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\ProgramaxMinsal\RPT_ProgramaMinsal.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\RecepXCanje\RPT_RecepPorCanje.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\RecepXSoliPrestamo\RPT_xSoliPrestamo.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\xDevolucionDePrestamo\RPT_xDevolDePrestamo.rdlc" />
+    <EmbeddedResource Include="reportes\Recepciones\xDonacion\RPT_xDonacion.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\AjusteExistencias\RPT_AjusteExistencia.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\AjusteMaterial\RPT_AjusteMaterial.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\BinCard\RPT_Bincard.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\RPT_ConsumoXStock_CriMinMax.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\RPT_ConsumoXCCosto4.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\RPT_ProgramaCompra.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\RPT_DespaMandatoCENABAST2.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Despacho\DespachoXPauta\RPT_DespachoXPauta.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\RPT_DespaXServicio_D1CC.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\RPT_DespaXServicio_R1CC.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\EstadosOrdenCompra\RPT_EstadosOC2.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\FVto_PeriodoMaterial\RPT_FVto_PeriMate.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Inventario\InventarioRealExistencia\RPT_InveRealExistencia.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Inventario\InventarioXFamilia\RPT_InveXFamilia.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\RPT_InveXItem.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\RPT_InveXItem2.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\MaterialFarmaco_SinMov\RPT_MatFar_SinMov.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\PedidosNoPlanificados\RPT_PedidosNoPlan.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Stock_Min_Max\RPT_StockCritico_MiMax.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Transferencias\ConsolidadoMensual\RPT_ConsolidadoMensualTranfs.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Transferencias\EntreBodegas\RPT_TransferenciasBodegasDetalle.rdlc" />
+    <EmbeddedResource Include="reportes\Reportes\Transferencias\EntreBodegas\RPT_TransfreneciasBodegas.rdlc" />
+    <EmbeddedResource Include="reportes\StockEmergencia\RPT_StockEmergencia.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="clases\webAplication\activarIVA.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDatosOrdenCompra.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getMateriales.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDetalleMaterial.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getListaBodegas.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\cargaHistorialxFechaPMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\cargaHistorialxNdonacionPMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\getListaProgramas.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\BuscarDonaciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\cargaHistorialxFecha.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\cargaHistorialxNumero.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getArticulosGrid2.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getBusquedaXCodigo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getCorretativoDonacion.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getFechaServidor.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\getLista.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveDetalleMovimiento.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveDonacion.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveMovimiento.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\getCorretativoMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveMovimientoMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveDetalleMovimientoMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveDonacionMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getDataPopupForm.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\BusquedaOCPopUp.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\BusquedaRECPorUp.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\AsocFacturaAGuiaDespacho\getListaDatosSelect.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\AsocFacturaAGuiaDespacho\getGuiasDespacho.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\AsocDevolXNroPedido\GetDatosDevXNroPedido.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\cargaHistorialxFechaPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\cargaHistorialxNumeroPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getArticlosAGrid1xPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getListaInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\cargaHistorialxFechaRecpXSoliPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\cargaHistorialxNumeroRecpXSoliPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getCorrelativoRecepxSolicitudPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\savePrestamoRecepxSolicitudPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\getBusquedaxCodigoRecepxSoliPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getCorrelativoDespOtrasInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\savePrestamoDespOtrasInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\saveDetalleMovimientoPresOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getArticlosAGrid1xPrestamoAntiguo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\cargaHistorialxFechaDespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\cargaHistorialxNPrestamoDespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistoricoArticulosAGrid1DespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getListaProveedores.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\cargaHistorialxFechaDespachoXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\cargaHistorialxNumeroDespachoXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getInformacionADespachoXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\getCorrelativoDespachoXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\saveCanjeDespachoXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\cargaHistorialxFechaRecepcionXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\cargaHistorialxNumeroRecepcionXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\getHistorialArticulosRecepcionxCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\getCorrelativoRecepcionXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveMovimientoRecepcionXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveDetalleMovimientoRecepcionXCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\CheckRecepcionxCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getFechaServidorDespachos.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\saveTempOtrasInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getDetalleProductosDespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistorialDetalleProductosDespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\buscaCorrelativoDespOtrasInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\getHistorialTempDetalleProductosDespOtrasInst.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getCorrelativoRecepDevoxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveTempRecep_DevolucionxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\buscaCorrelativoRecep_DevolucionxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getHistorial_DetalleTempRecep_DevoxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveMovimiento_DevoluxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\saveDetalleMovimiento_DevoluxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getDatos_EncabezadoHistotico_DevoxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getArticulosGrid2_A_Grid1.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getHistorial_DetalleTabla1Recep_DevoxPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getCorrelativo_Desp_PorDevolucionDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\buscaCorrelativo_Despacho_PorDevolucionDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\saveDetalleMovimiento_PorDevoluDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\savePrestamo_PorDevoluDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getDatos_EncabezadoHistotico_PorDevoDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getHistorial_Detalle_PorDevolucionDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\getHistorial_DetalleTemp_PorDevoDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorDevolucionDePrestamo\saveTempRecep_PorDevolucionDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\BuscarInfo_Materiales_RecepxDonacion.ashx" />
+    <Content Include="clases\persistencia\controladores\StockEmergencia\getListaEstablecimientos_StockEmergencia.ashx" />
+    <Content Include="clases\persistencia\controladores\StockEmergencia\getListaFamliaProductos.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\getListaMateriales_BincardGeneral.ashx" />
+    <Content Include="clases\persistencia\controladores\StockEmergencia\CallReport_StockEmergencia.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\getListaPeriodos_BincardGeneral.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\getListaArticulos_Bincard.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\getCorrelativo_Bincard.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\SaveTemp_BinCard.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\getListaBodegas_Bincard.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\BinCard\busca_Bodega_Material_Bincard.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getListaEstados_EstadosOC.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getProveedores_EstadosOC.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\EstadosOrdenCompra\getListaBodegas_EstadosOC.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Stock_Min_Max\getCorrelativo_Stock_CriMinMax.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\FVto_PeriodoMaterial\getListaMateriales_FVto_PeriMate.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\MaterialFarmaco_SinMov\getListaArticulos_MatFar_SinMov.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Inventario\InventarioXItem\getListaItems_InvenXItem.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Inventario\InventarioXFamilia\getListaFamilia_InveXFami.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\AUsuarios\DataDespachoUsuarios.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\ModificacionDespachos\DataModificacionDespacho.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionXUsuarios\DevolucionUsuariosHandler.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Despacho\DespachoXPauta\getListaCentroCosto.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorTransferencia\DataDespachoTransferencia.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Transferencias\EntreBodegas\DataRptTransferenciasBodegas.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\Despacho\AUsuarios\DataRptDespachoAUsuarios.ashx" />
+    <Content Include="clases\persistencia\controladores\CENABAST\RecepCenabast\CenabastHandler.ashx" />
+    <Content Include="clases\persistencia\controladores\GeneraInforme.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PrestamoOtrasInstituciones\deleteTemp_DespPresOtrasInstituciones.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getFechaServidor.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorTransferencia\getCorrelativo_DespachoTransferencia.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DevolucionxPrestamo\getFechaServer_DevoXPrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\AUsuarios\getCorrelativo_DespachoHaciaUsuarios.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\DesdeProveedores\getData_NotaCreditoPopUp.ashx" />
+    <Content Include="clases\persistencia\controladores\validaDetalleMaterial.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\PorCanjeDespacho\saveDetalleMov_DespxCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\DevolucionXTransferencia\DataDevolucionXTransferencia.ashx" />
+    <Content Include="clases\persistencia\controladores\Despachos\DevolucionXTransferencia\getCorrelativo_DevolucionTransferencia.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\ProgramaxMinsal\saveMinsal.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxDonacion\saveGloDonacion.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxPrestamo\saveSolicitudDePrestamo.ashx" />
+    <Content Include="clases\persistencia\controladores\Recepciones\RecepcionxCanje\saveRecepCanje.ashx" />
+    <Content Include="clases\persistencia\controladores\Reportes\AjusteMaterial\DataAjusteMaterial.ashx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="componentes\bootstrap\fonts\glyphiconshalflings-regular.eot" />
+    <None Include="componentes\bootstrap\fonts\glyphiconshalflings-regular.otf" />
+    <None Include="componentes\bootstrap\fonts\glyphiconshalflings-regular.svg" />
+    <None Include="componentes\bootstrap\fonts\glyphiconshalflings-regular.ttf" />
+    <None Include="componentes\bootstrap\fonts\glyphiconshalflings-regular.woff" />
+    <None Include="componentes\fonts\code-bold\code_bold-webfont.eot" />
+    <None Include="componentes\fonts\code-bold\code_bold-webfont.svg" />
+    <None Include="componentes\fonts\code-bold\code_bold-webfont.ttf" />
+    <None Include="componentes\fonts\code-bold\code_bold-webfont.woff" />
+    <None Include="componentes\fonts\code-light\code_light-webfont.eot" />
+    <None Include="componentes\fonts\code-light\code_light-webfont.svg" />
+    <None Include="componentes\fonts\code-light\code_light-webfont.ttf" />
+    <None Include="componentes\fonts\code-light\code_light-webfont.woff" />
+    <None Include="componentes\fonts\verdana\verdana-webfont.eot" />
+    <None Include="componentes\fonts\verdana\verdana-webfont.svg" />
+    <None Include="componentes\fonts\verdana\verdana-webfont.ttf" />
+    <None Include="componentes\fonts\verdana\verdana-webfont.woff" />
+    <None Include="componentes\glyphicons\archivos\fonts\glyphicons-filetypes-regular.eot" />
+    <None Include="componentes\glyphicons\archivos\fonts\glyphicons-filetypes-regular.svg" />
+    <None Include="componentes\glyphicons\archivos\fonts\glyphicons-filetypes-regular.woff" />
+    <None Include="componentes\glyphicons\halflings\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="componentes\glyphicons\halflings\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="componentes\glyphicons\halflings\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="componentes\glyphicons\halflings\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="componentes\glyphicons\normal\fonts\glyphicons-regular.eot" />
+    <None Include="componentes\glyphicons\normal\fonts\glyphicons-regular.svg" />
+    <None Include="componentes\glyphicons\normal\fonts\glyphicons-regular.ttf" />
+    <None Include="componentes\glyphicons\normal\fonts\glyphicons-regular.woff" />
+    <None Include="componentes\glyphicons\social\fonts\glyphicons-social-regular.eot" />
+    <None Include="componentes\glyphicons\social\fonts\glyphicons-social-regular.svg" />
+    <None Include="componentes\glyphicons\social\fonts\glyphicons-social-regular.ttf" />
+    <None Include="componentes\glyphicons\social\fonts\glyphicons-social-regular.woff" />
+    <None Include="componentes\nivoslider\themes\.DS_Store" />
+    <None Include="componentes\nivoslider\themes\bar\Thumbs.db" />
+    <None Include="componentes\nivoslider\themes\dark\.DS_Store" />
+    <None Include="componentes\nivoslider\themes\dark\Thumbs.db" />
+    <None Include="componentes\nivoslider\themes\default\Thumbs.db" />
+    <None Include="componentes\nivoslider\themes\light\Thumbs.db" />
+    <None Include="generadorQR\Despachos\PorCanje\dsQR_DespaXCanje.xsc">
+      <DependentUpon>dsQR_DespaXCanje.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Despachos\PorCanje\dsQR_DespaXCanje.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_DespaXCanje.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Despachos\PorCanje\dsQR_DespaXCanje.xss">
+      <DependentUpon>dsQR_DespaXCanje.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Despachos\PrestamoOtrasInstituciones\dsQR_PrestamoOtrasInstitu.xsc">
+      <DependentUpon>dsQR_PrestamoOtrasInstitu.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Despachos\PrestamoOtrasInstituciones\dsQR_PrestamoOtrasInstitu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_PrestamoOtrasInstitu.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Despachos\PrestamoOtrasInstituciones\dsQR_PrestamoOtrasInstitu.xss">
+      <DependentUpon>dsQR_PrestamoOtrasInstitu.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Despachos\XDevolucionDePrestamo\dsQR_XDevolucionDePrestamo.xsc">
+      <DependentUpon>dsQR_XDevolucionDePrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Despachos\XDevolucionDePrestamo\dsQR_XDevolucionDePrestamo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_XDevolucionDePrestamo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Despachos\XDevolucionDePrestamo\dsQR_XDevolucionDePrestamo.xss">
+      <DependentUpon>dsQR_XDevolucionDePrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxNroPedido\dsQR_DevolucionxNroPedido.xsc">
+      <DependentUpon>dsQR_DevolucionxNroPedido.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxNroPedido\dsQR_DevolucionxNroPedido.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_DevolucionxNroPedido.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxNroPedido\dsQR_DevolucionxNroPedido.xss">
+      <DependentUpon>dsQR_DevolucionxNroPedido.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxPrestamo\dsQR_DevolucionxPrestamo.xsc">
+      <DependentUpon>dsQR_DevolucionxPrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxPrestamo\dsQR_DevolucionxPrestamo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_DevolucionxPrestamo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxPrestamo\dsQR_DevolucionxPrestamo.xss">
+      <DependentUpon>dsQR_DevolucionxPrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxUsuario\dsQR_DevolucionXUsuario.xsc">
+      <DependentUpon>dsQR_DevolucionXUsuario.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxUsuario\dsQR_DevolucionXUsuario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_DevolucionXUsuario.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\DevolucionxUsuario\dsQR_DevolucionXUsuario.xss">
+      <DependentUpon>dsQR_DevolucionXUsuario.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\ProgramaxMinsal\dsQR_ProgramaMinsal.xsc">
+      <DependentUpon>dsQR_ProgramaMinsal.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\ProgramaxMinsal\dsQR_ProgramaMinsal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_ProgramaMinsal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\ProgramaxMinsal\dsQR_ProgramaMinsal.xss">
+      <DependentUpon>dsQR_ProgramaMinsal.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionXCanje\dsQR_RecepcionXCanje.xsc">
+      <DependentUpon>dsQR_RecepcionXCanje.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionXCanje\dsQR_RecepcionXCanje.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_RecepcionXCanje.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionXCanje\dsQR_RecepcionXCanje.xss">
+      <DependentUpon>dsQR_RecepcionXCanje.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionxDonacion\dsQR_RecepXDonacion.xsc">
+      <DependentUpon>dsQR_RecepXDonacion.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionxDonacion\dsQR_RecepXDonacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_RecepXDonacion.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepcionxDonacion\dsQR_RecepXDonacion.xss">
+      <DependentUpon>dsQR_RecepXDonacion.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\dsQR_RecepXSolicitudPrestamo.xsc">
+      <DependentUpon>dsQR_RecepXSolicitudPrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\dsQR_RecepXSolicitudPrestamo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_RecepXSolicitudPrestamo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\RecepXSolicitudPrestamo\dsQR_RecepXSolicitudPrestamo.xss">
+      <DependentUpon>dsQR_RecepXSolicitudPrestamo.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\UsuariosProveedores\dsQR_RecepcionDesdeProveedores.xsc">
+      <DependentUpon>dsQR_RecepcionDesdeProveedores.xsd</DependentUpon>
+    </None>
+    <None Include="generadorQR\Recepcion\UsuariosProveedores\dsQR_RecepcionDesdeProveedores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQR_RecepcionDesdeProveedores.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="generadorQR\Recepcion\UsuariosProveedores\dsQR_RecepcionDesdeProveedores.xss">
+      <DependentUpon>dsQR_RecepcionDesdeProveedores.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsc">
+      <DependentUpon>dsRpt_DespachoAUsuarios.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRpt_DespachoAUsuarios.Designer.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xss">
+      <DependentUpon>dsRpt_DespachoAUsuarios.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\NotaCredito\dsRpt_RecepDP_NC.xsc">
+      <DependentUpon>dsRpt_RecepDP_NC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\NotaCredito\dsRpt_RecepDP_NC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRpt_RecepDP_NC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\NotaCredito\dsRpt_RecepDP_NC.xss">
+      <DependentUpon>dsRpt_RecepDP_NC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\Rpt_RecpMateriales_DesdeProveedores.xsc">
+      <DependentUpon>Rpt_RecpMateriales_DesdeProveedores.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\Rpt_RecpMateriales_DesdeProveedores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Rpt_RecpMateriales_DesdeProveedores.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Recepciones\DesdeProveedores\Rpt_RecpMateriales_DesdeProveedores.xss">
+      <DependentUpon>Rpt_RecpMateriales_DesdeProveedores.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\deUsuarios\dsRpt_Recepcion_deUsuarios.xsc">
+      <DependentUpon>dsRpt_Recepcion_deUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\deUsuarios\dsRpt_Recepcion_deUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRpt_Recepcion_deUsuarios.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Recepciones\deUsuarios\dsRpt_Recepcion_deUsuarios.xss">
+      <DependentUpon>dsRpt_Recepcion_deUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\porNroPedido\dsRpt_Recepcion_porNroPedido.xsc">
+      <DependentUpon>dsRpt_Recepcion_porNroPedido.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\porNroPedido\dsRpt_Recepcion_porNroPedido.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRpt_Recepcion_porNroPedido.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Recepciones\porNroPedido\dsRpt_Recepcion_porNroPedido.xss">
+      <DependentUpon>dsRpt_Recepcion_porNroPedido.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\ProgramaxMinsal\dsRPT_ProgramaMinsal.xsc">
+      <DependentUpon>dsRPT_ProgramaMinsal.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\ProgramaxMinsal\dsRPT_ProgramaMinsal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_ProgramaMinsal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="reportes\Recepciones\ProgramaxMinsal\dsRPT_ProgramaMinsal.xss">
+      <DependentUpon>dsRPT_ProgramaMinsal.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsc">
+      <DependentUpon>dsRPT_xDonacion.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_xDonacion.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Recepciones\xDonacion\dsRPT_xDonacion.xss">
+      <DependentUpon>dsRPT_xDonacion.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportes\Reportes\AjusteExistencias\dsRPT_AjusteExist.xsc">
+      <DependentUpon>dsRPT_AjusteExist.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\AjusteExistencias\dsRPT_AjusteExist.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_AjusteExist.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\AjusteExistencias\dsRPT_AjusteExist.xss">
+      <DependentUpon>dsRPT_AjusteExist.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\BinCard\dsRPT_Bincard.xsc">
+      <DependentUpon>dsRPT_Bincard.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\BinCard\dsRPT_Bincard.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_Bincard.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\BinCard\dsRPT_Bincard.xss">
+      <DependentUpon>dsRPT_Bincard.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\dsRPT_ConsXBodegaStock.xsc">
+      <DependentUpon>dsRPT_ConsXBodegaStock.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\dsRPT_ConsXBodegaStock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_ConsXBodegaStock.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXBodegaStock\dsRPT_ConsXBodegaStock.xss">
+      <DependentUpon>dsRPT_ConsXBodegaStock.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\dsRPT_ConsumoXCCosto.xsc">
+      <DependentUpon>dsRPT_ConsumoXCCosto.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\dsRPT_ConsumoXCCosto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_ConsumoXCCosto.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ConsumoXCCosto\dsRPT_ConsumoXCCosto.xss">
+      <DependentUpon>dsRPT_ConsumoXCCosto.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\dsRPT_ProgramaCompra.xsc">
+      <DependentUpon>dsRPT_ProgramaCompra.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\dsRPT_ProgramaCompra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_ProgramaCompra.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\ConsumoMensual\ProgramaCompra\dsRPT_ProgramaCompra.xss">
+      <DependentUpon>dsRPT_ProgramaCompra.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\dsRPT_DespaMandatoCENABAST.xsc">
+      <DependentUpon>dsRPT_DespaMandatoCENABAST.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\dsRPT_DespaMandatoCENABAST.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_DespaMandatoCENABAST.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoMandatoCENABAST\dsRPT_DespaMandatoCENABAST.xss">
+      <DependentUpon>dsRPT_DespaMandatoCENABAST.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXPauta\dsRPT_DespaXPauta.xsc">
+      <DependentUpon>dsRPT_DespaXPauta.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXPauta\dsRPT_DespaXPauta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_DespaXPauta.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXPauta\dsRPT_DespaXPauta.xss">
+      <DependentUpon>dsRPT_DespaXPauta.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\dsRPT_DespaXServicio_D1CC.xsc">
+      <DependentUpon>dsRPT_DespaXServicio_D1CC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\dsRPT_DespaXServicio_D1CC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_DespaXServicio_D1CC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_D1CC\dsRPT_DespaXServicio_D1CC.xss">
+      <DependentUpon>dsRPT_DespaXServicio_D1CC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\dsRPT_DespaXServicio_R1CC.xsc">
+      <DependentUpon>dsRPT_DespaXServicio_R1CC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\dsRPT_DespaXServicio_R1CC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_DespaXServicio_R1CC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Despacho\DespachoXServicio\DespachoXServicio_R1CC\dsRPT_DespaXServicio_R1CC.xss">
+      <DependentUpon>dsRPT_DespaXServicio_R1CC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\EstadosOrdenCompra\dsRPT_EstadosOC.xsc">
+      <DependentUpon>dsRPT_EstadosOC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\EstadosOrdenCompra\dsRPT_EstadosOC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_EstadosOC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\EstadosOrdenCompra\dsRPT_EstadosOC.xss">
+      <DependentUpon>dsRPT_EstadosOC.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\FVto_PeriodoMaterial\dsRPT_FVto_PeriodoMaterial.xsc">
+      <DependentUpon>dsRPT_FVto_PeriodoMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\FVto_PeriodoMaterial\dsRPT_FVto_PeriodoMaterial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_FVto_PeriodoMaterial.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\FVto_PeriodoMaterial\dsRPT_FVto_PeriodoMaterial.xss">
+      <DependentUpon>dsRPT_FVto_PeriodoMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioRealExistencia\dsRPT_InveRealExistencia.xsc">
+      <DependentUpon>dsRPT_InveRealExistencia.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioRealExistencia\dsRPT_InveRealExistencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_InveRealExistencia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioRealExistencia\dsRPT_InveRealExistencia.xss">
+      <DependentUpon>dsRPT_InveRealExistencia.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXFamilia\dsRPT_InveXFamilia.xsc">
+      <DependentUpon>dsRPT_InveXFamilia.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXFamilia\dsRPT_InveXFamilia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_InveXFamilia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXFamilia\dsRPT_InveXFamilia.xss">
+      <DependentUpon>dsRPT_InveXFamilia.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\dsRPT_InveXItem.xsc">
+      <DependentUpon>dsRPT_InveXItem.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\dsRPT_InveXItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_InveXItem.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XDetalle\dsRPT_InveXItem.xss">
+      <DependentUpon>dsRPT_InveXItem.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\dsRPT_InveXItem2.xsc">
+      <DependentUpon>dsRPT_InveXItem2.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\dsRPT_InveXItem2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_InveXItem2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Inventario\InventarioXItem\XResumen\dsRPT_InveXItem2.xss">
+      <DependentUpon>dsRPT_InveXItem2.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\MaterialFarmaco_SinMov\dsRPT_MatFar_SinMov.xsc">
+      <DependentUpon>dsRPT_MatFar_SinMov.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\MaterialFarmaco_SinMov\dsRPT_MatFar_SinMov.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_MatFar_SinMov.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\MaterialFarmaco_SinMov\dsRPT_MatFar_SinMov.xss">
+      <DependentUpon>dsRPT_MatFar_SinMov.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\PedidosNoPlanificados\dsRPT_PedidosNoPlanificados.xsc">
+      <DependentUpon>dsRPT_PedidosNoPlanificados.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\PedidosNoPlanificados\dsRPT_PedidosNoPlanificados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_PedidosNoPlanificados.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\PedidosNoPlanificados\dsRPT_PedidosNoPlanificados.xss">
+      <DependentUpon>dsRPT_PedidosNoPlanificados.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Stock_Min_Max\dsRPT_StockCritico_Min_Max.xsc">
+      <DependentUpon>dsRPT_StockCritico_Min_Max.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Stock_Min_Max\dsRPT_StockCritico_Min_Max.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_StockCritico_Min_Max.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Stock_Min_Max\dsRPT_StockCritico_Min_Max.xss">
+      <DependentUpon>dsRPT_StockCritico_Min_Max.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\ConsolidadoMensual\dsRPT_ConsolidadoMensualTransf.xsc">
+      <DependentUpon>dsRPT_ConsolidadoMensualTransf.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\ConsolidadoMensual\dsRPT_ConsolidadoMensualTransf.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_ConsolidadoMensualTransf.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\ConsolidadoMensual\dsRPT_ConsolidadoMensualTransf.xss">
+      <DependentUpon>dsRPT_ConsolidadoMensualTransf.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\EntreBodegas\dsRPT_TransfEntreBodegas.xsc">
+      <DependentUpon>dsRPT_TransfEntreBodegas.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\EntreBodegas\dsRPT_TransfEntreBodegas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRPT_TransfEntreBodegas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\Reportes\Transferencias\EntreBodegas\dsRPT_TransfEntreBodegas.xss">
+      <DependentUpon>dsRPT_TransfEntreBodegas.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\StockEmergencia\dsStockEmergencia.xsc">
+      <DependentUpon>dsStockEmergencia.xsd</DependentUpon>
+    </None>
+    <None Include="reportes\StockEmergencia\dsStockEmergencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStockEmergencia.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="reportes\StockEmergencia\dsStockEmergencia.xss">
+      <DependentUpon>dsStockEmergencia.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="clases\logica\Reportes\Transferencias\ConsolidadMensual\" />
+    <Folder Include="clases\logica\Reportes\Transferencias\TransferenciaEntreBodega\" />
+    <Folder Include="reportes\Reportes\Despacho\AUsuarios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51522</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

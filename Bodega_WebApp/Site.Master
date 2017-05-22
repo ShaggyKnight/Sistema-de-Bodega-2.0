@@ -1,0 +1,454 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Bodega_WebApp.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bodega 2.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- bootstrap: amigable con los moviles -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <% Response.Write(Me.css)%>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .sinSubrayado:hover
+        {
+            text-decoration: none;
+        }
+        
+        .userlog
+        {
+            margin-left: 750px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server" style="height: 100%;">
+    <div class="wrapper">
+        <div class="container">
+            <div id="contenedorHeader" class="header">
+                <!-- Sección: Slider de cabecera -->
+                    <img alt="" runat=server id="logoSlider" src="~/componentes/imagenes/principal/logo_minsal.jpg" />
+                <div id="nivoSliderSection">
+                    <div id="eslogan">
+                        <span id="eslogan_hospital">hospital regional de antofagasta</span> <span id="eslogan_nombre">
+                            dr. leonardo guzman</span>
+                    </div>
+                    <div class="slider-wrapper theme-default">
+                        <div id="slider" class="nivoSlider">
+                            <img alt="" runat="server" src="~/componentes/imagenes/slider/1.jpg" />
+                            <img alt="" runat="server" src="~/componentes/imagenes/slider/2.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de la sección: Slider de cabecera -->
+                <%  If Not IsNothing(Session("usuarioLogeado")) Then%>
+                <ul id="menuPrincipal" class="nav nav-tabs">
+                    <!-- Inicio -->
+                    <%  If Me.idePagina = Bodega_WebApp.Pagina.inicio Then%>
+                    <li class="active">
+                        <asp:HyperLink ID="LinkInicio" NavigateUrl="~/paginas/index.aspx" runat="server"
+                            Text="Inicio"></asp:HyperLink></li>
+                    <% Else%>
+                    <li>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/paginas/index.aspx" runat="server"
+                            Text="Inicio"></asp:HyperLink></li>
+                    <% End If%>
+                    <!-- Recepciones -->
+                    <li class="<% If Bodega_WebApp.Pagina.isRecepcion(Me.idePagina) Then Response.Write("active")%>">
+                        <a data-toggle="dropdown" href="#">Recepciones</a>
+                        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepDesdeProveedores Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="UsuariosProveedores" NavigateUrl="~/paginas/Recepciones/UsuariosProveedores.aspx"
+                                    runat="server" Text="Desde Proveedores"></asp:HyperLink>
+                            </li>
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepFacturasaGuia Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="facturasAGuiasDespacho" NavigateUrl="~/paginas/Recepciones/facturasAGuiasDespacho.aspx"
+                                    runat="server" Text="Asociar Facturas a Guías de Despacho"></asp:HyperLink>
+                            </li>
+                            <!-- 
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepDevolucionxNPedido Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="DevolucionXNumeroPedido" NavigateUrl="~/paginas/Recepciones/DevolucionXNumeroPedido.aspx"
+                                    runat="server" Text="Devolución de Materiales x Nº de Pedido"></asp:HyperLink>
+                            </li>
+                            -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepDevolucionUsuario Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="DevolucionXUsuarios" NavigateUrl="~/paginas/Recepciones/DevolucionxUsuarios.aspx"
+                                    runat="server" Text="Devolucion por Usuarios"></asp:HyperLink>
+                            </li>
+                            <!-- NUEVO 06/05/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepProgramaMinsal Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink11" NavigateUrl="~/paginas/Recepciones/ProgramaxMinsal.aspx"
+                                    runat="server" Text="Programa Ministerial"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepxDonacion Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink10" NavigateUrl="~/paginas/Recepciones/RecepcionxDonacion.aspx"
+                                    runat="server" Text="Recepción por Donación"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 16/05/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepDevolucionPrestamo Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink12" NavigateUrl="~/paginas/Recepciones/DevolucionxPrestamo.aspx"
+                                    runat="server" Text="Devolución de Préstamo 2B"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 22/05/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepSolicitudPrestamo Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink13" NavigateUrl="~/paginas/Recepciones/RecepcionxSolicitudPrestamo.aspx"
+                                    runat="server" Text="Recepción por Solicutud de Préstamo 1A"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 17/06/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.recepCanje Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink16" NavigateUrl="~/paginas/Recepciones/RecepcionxCanje.aspx"
+                                    runat="server" Text="Recepción por Canje"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                        </ul>
+                    </li>
+                    <!-- Despacho -->
+                    <li class="<% If Bodega_WebApp.Pagina.isDespacho(Me.idePagina) Then Response.Write("active")%>">
+                        <a data-toggle="dropdown" href="#">Despachos</a>
+                        <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                           <li class="<% If idePagina = Bodega_WebApp.Pagina.despaHaciaUsuarios Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="DespAUsuarios" NavigateUrl="~/paginas/Despachos/DespachoAUsuarios.aspx"
+                                    runat="server" Text="Despacho a Usuarios"></asp:HyperLink>
+                            </li>
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaModificacionDespacho Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="ModificacionDespacho" NavigateUrl="~/paginas/Despachos/modificacionDespacho.aspx"
+                                    runat="server" Text="Modificación Despacho"></asp:HyperLink>
+                            </li>
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaTransferencias Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="Transferencias" NavigateUrl="~/paginas/Despachos/DespachosXTransferencia.aspx"
+                                    runat="server" Text="Transferencias"></asp:HyperLink>
+                            </li> 
+                            <!-- NUEVO 30/09/2015 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaDevolucionTransferencias Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink8" NavigateUrl="~/paginas/Despachos/DevolucionXTransferencia.aspx"
+                                    runat="server" Text="Transferencias Devolución"></asp:HyperLink>
+                            </li> 
+                            <!-- NUEVO 23/07/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaDevolucionDePrestamos Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink17" NavigateUrl="~/paginas/Despachos/PorDevolucionDePrestamo.aspx"
+                                    runat="server" Text="Por Devolución de Préstamo 1B"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 30/05/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaPrestamosOtrasInstitu Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink14" NavigateUrl="~/paginas/Despachos/PrestamoOtrasInstituciones.aspx"
+                                    runat="server" Text="Préstamos a Otras Instituciones 2A"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 10/06/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.despaCanje Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink15" NavigateUrl="~/paginas/Despachos/PorCanje.aspx"
+                                    runat="server" Text="Despacho por Canje"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            
+                        </ul>
+                    </li>
+                    <!-- Stock Emergencia -->
+                    <%  If Me.idePagina = Bodega_WebApp.Pagina.StockEmergencia Then%>
+                    <li class="active">
+                        <asp:HyperLink ID="hyperStock" NavigateUrl="~/paginas/StockEmergencia/StockEmergencia.aspx" runat="server"
+                            Text="Stock Emergencia"></asp:HyperLink></li>
+                    <% Else%>
+                    <li>
+                        <asp:HyperLink ID="hyperStock2" NavigateUrl="~/paginas/StockEmergencia/StockEmergencia.aspx" runat="server"
+                            Text="Stock Emergencia"></asp:HyperLink></li>
+                    <% End If%>
+                    <!-- CENABAST -->
+                    <% If Me.idePagina = Bodega_WebApp.Pagina.cenabast Then%>
+                    <li class="active">
+                        <asp:HyperLink ID="hypercenabast" Visible="true" NavigateUrl="~/paginas/CENABAST/RercepcionCenabast.aspx" runat="server"
+                            Text="CENABAST" ></asp:HyperLink></li>
+                    <% Else%>
+                    <li>
+                        <asp:HyperLink ID="hypercenabast2" Visible="true" NavigateUrl="~/paginas/CENABAST/RercepcionCenabast.aspx" runat="server"
+                            Text="CENABAST"></asp:HyperLink></li>
+                    <% End If%>
+                   
+                    <!-- REPORTES -->
+                    <li class="<% If Bodega_WebApp.Pagina.isReportes(Me.idePagina) Then Response.Write("active")%>">
+                        <a data-toggle="dropdown" href="#">Reportes</a>
+                        <ul id="Ul3" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                            <!-- NUEVO 03/11/2015 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.ajusteMaterial Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink9" NavigateUrl="~/paginas/Reportes/AjusteMaterial.aspx"
+                                    runat="server" Text="Ajuste Material (Supervisor)"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 04/09/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportBincardGeneral Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink20" NavigateUrl="~/paginas/Reportes/BincardGeneral.aspx"
+                                    runat="server" Text="Bincard General"></asp:HyperLink>
+                            </li>
+                            <!-- NUEVO 29/12/2015 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.ajusteExistencias Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink23" NavigateUrl="~/paginas/Reportes/AjusteExistencias.aspx"
+                                    runat="server" Text="Ajuste de Existencias"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 03/09/2015 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportOCxFactura Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink7" NavigateUrl="~/paginas/Reportes/OCxNroFactura.aspx"
+                                    runat="server" Text="OC xNº Factura"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 30/09/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportOrdenesCompra Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink18" NavigateUrl="~/paginas/Reportes/EstadosOrdenCompra.aspx"
+                                    runat="server" Text="Estado de Ordenes de Compra"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 16/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportInventarioXItem Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink24" NavigateUrl="~/paginas/Reportes/Inventario/InventarioXItem.aspx"
+                                    runat="server" Text="Inventario X Item"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 20/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportInventarioXFamilia Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink25" NavigateUrl="~/paginas/Reportes/Inventario/InventarioXFamilia.aspx"
+                                    runat="server" Text="Inventario X Familia"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 22/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportInventarioREAL Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink26" NavigateUrl="~/paginas/Reportes/Inventario/Inventario_RealExistencia.aspx"
+                                    runat="server" Text="Inventario Real en Existencia"></asp:HyperLink>
+                            </li>
+
+                            <!-- ---- ----- ----- ----- -->
+                            <!-- - REPORTES DESPACHOS - -->
+                            <!-- ---- ----- ----- ----- -->
+
+                            <!-- NUEVO 29/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportAUsuarios Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="despachoAusuarios" NavigateUrl="~/paginas/Reportes/Despacho/DespachoAUsuarios.aspx"
+                                    runat="server" Text="Despacho A Usuarios"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 29/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reporXServicio Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink4" NavigateUrl="~/paginas/Reportes/Despacho/DespachoXServicio.aspx"
+                                    runat="server" Text="Despacho x Servicio"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 28/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reporXPauta Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink3" NavigateUrl="~/paginas/Reportes/Despacho/DespachoXPauta.aspx"
+                                    runat="server" Text="Despacho v/s Pauta"></asp:HyperLink>
+                            </li>
+                            <!-- NUEVO 27/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportMandatoCENABAST Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink2" NavigateUrl="~/paginas/Reportes/Despacho/DespachoMandatoCENABAST.aspx"
+                                    runat="server" Text="Despacho v/s Mandato CENABAST"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+
+                            <!-- ---- ----- ----- ----- -->
+                            <!-- TRANSFERENCIAS BODEGAS -->
+                            <!-- ---- ----- ----- ----- -->
+
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 22/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportTrasferenciaBodegas Then Response.Write("active")%>" role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="transferenciasBodegas" NavigateUrl="~/paginas/Reportes/Transferencias/TransferenciasEntreBodegas.aspx"
+                                runat="server" Text="Transferencias Entre Bodegas"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 22/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportConsolidadoMensual Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="consolidadoMensual" NavigateUrl="~/paginas/Reportes/Transferencias/ConsolidadoMensualTransf.aspx"
+                                    runat="server" Text="Consolidado Mensual"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+
+                            <!-- NUEVO 07/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportStockMinimoMaximo Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink19" NavigateUrl="~/paginas/Reportes/Stock_Min_Max.aspx"
+                                    runat="server" Text="Stock Critico - Minimo - Maximo"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 08/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportFVtoXPeriodoMaterial Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink21" NavigateUrl="~/paginas/Reportes/FVto_PeriodoMaterial.aspx"
+                                    runat="server" Text="Fecha Vto. Periodo - Material"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            <!-- NUEVO 10/10/2014 -->
+                            <%--<li class="<% If idePagina = Bodega_WebApp.Pagina.reportMaterialesFarmacos Then Response.Write("active")%>"
+                                role="presentation" >
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink23" NavigateUrl="~/paginas/Reportes/MaterialFarmaco_SinMov.aspx"
+                                    runat="server" Text="Material/Fármaco Sin Movimiento" ></asp:HyperLink>
+                            </li>--%>
+                            <!-- FIN NUEVO -->    
+
+                            <!-- ---- ---- ---- -->
+                            <!-- CONSUMO MENSUAL -->
+                            <!-- ---- ---- ---- -->
+                            
+                            <!-- NUEVO 18/11/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportProgramaDeCompra Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink6" NavigateUrl="~/paginas/Reportes/ConsumoMensual/ProgramaDeCompra.aspx"
+                                    runat="server" Text="Consumo X Programa De Compra"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+
+                            <!-- NUEVO 20/11/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportConsumoXBodegaStock_CriMinMax Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink27" NavigateUrl="~/paginas/Reportes/ConsumoMensual/ConsumoXBodegaStock.aspx"
+                                    runat="server" Text="Consumo X Bodega (Stock Cri-Min-Max) "></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+
+                            <!-- NUEVO 06/11/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportConsumoMensualXCCosto Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink5" NavigateUrl="~/paginas/Reportes/ConsumoMensual/ConsumoXCCosto.aspx"
+                                    runat="server" Text="Consumo x Centro Costo"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+                            
+                            <!-- NUEVO 09/10/2014 -->
+                            <li class="<% If idePagina = Bodega_WebApp.Pagina.reportPedidosnoPlanificados Then Response.Write("active")%>"
+                                role="presentation">
+                                <asp:HyperLink role="menuitem" TabIndex="-1" ID="HyperLink22" NavigateUrl="~/paginas/Reportes/PedidosNoPlanificadosXBodega.aspx"
+                                    runat="server" Text="Solicitud Pedidos No Planificados x Bodega"></asp:HyperLink>
+                            </li>
+                            <!-- FIN NUEVO -->
+
+                        </ul>
+                    </li>
+                    <!-- Cerrar -->
+                    <li><a href="#" style="padding: 0;">
+                        <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar sesión" class="btn btn-link sinSubrayado" />
+                    </a></li>
+                </ul>
+                <%End If%>
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="push">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container" style="position: relative; height: 100%; border-top: 2px solid #0168B3">
+            <div id="logo_footer">
+                <div id="azul_logo_footer">
+                </div>
+                <div id="rojo_logo_footer">
+                </div>
+            </div>
+            <div id="contenedorTextoFooter">
+                <span class="text-center">
+                    <img alt="" id="Img1" runat="server" src="~/assets/imagenes/general/fondo.png" style="position: absolute;
+                        right: 0; top: -536px; z-index: -1;" />
+                    Avda. Argentina 1962 - Fono 556602 / 656602 Antofagasta, Chile </span>
+                    <p>versión 2.6 - (ctrl Nserie)</p>
+            </div>
+            <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server" />
+        </div>
+    </div>
+    <div id="dialogError" title="" style="display: none;">
+        <span id="descripcionError">No accesible</span>
+    </div>
+    </form>
+    <% Response.Write(Me.javascript)%>
+    <script type="text/javascript">
+
+        
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+                slices: 15, // For slice animations
+                boxCols: 8, // For box animations
+                boxRows: 4, // For box animations
+                animSpeed: 500, // Slide transition speed
+                pauseTime: 5000, // How long each slide will show
+                startSlide: 0, // Set starting Slide (0 index)
+                directionNav: false, // Next & Prev navigation
+                controlNav: false, // 1,2,3... navigation
+                controlNavThumbs: false, // Use thumbnails for Control Nav
+                pauseOnHover: false, // Stop animation while hovering
+                manualAdvance: false, // Force manual transitions
+                prevText: '', // Prev directionNav text
+                nextText: '', // Next directionNav text
+                randomStart: true // Start on a random slide
+            });
+        });
+
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            var ua = navigator.userAgent;
+            var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+                rv = parseFloat(RegExp.$1);
+            if (rv < 8) {
+                $(function () {
+                    $("#dialogError").dialog({
+                        height: 140,
+                        modal: true,
+                        title: "versión de Internet explorer no compatible"
+                    });
+                });
+            }
+            if (rv == 8 || rv == 9) {
+                $(function () {
+                    $("#dialogError").dialog({
+                        height: 140,
+                        width: 500,
+                        modal: true,
+                        title: "Versión de Internet explorer con errores gráficos",
+                        closeOnEscape: false
+                    });
+                });
+                $("#dialogError").find('.ui-dialog-titlebar-close').hide();
+                document.getElementById("descripcionError").innerHTML = "Internet explorer " + rv + " no puede trabajar con ciertas propiedades de CSS3.<br/>Esto impedirá que pueda desplegarse bien ciertos elementos";
+            }
+        }
+      
+    </script>
+    <asp:ContentPlaceHolder ID="contenedorJavascript" runat="server" />
+</body>
+</html>

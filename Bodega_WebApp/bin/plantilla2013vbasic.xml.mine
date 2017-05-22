@@ -1,0 +1,662 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+plantilla2013vbasic
+</name>
+</assembly>
+<members>
+<member name="F:plantilla2013vbasic.BaseDatos.usuario">
+	<summary>
+ Nombre de usuario
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.password">
+	<summary>
+ Password de usuario
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.servidor">
+	<summary>
+ Nombre del servidor
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.conexion">
+	<summary>
+ Conexión con la base de datos
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.dataReader">
+	<summary>
+ Lector de salidas de la base de datos
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.comando">
+	<summary>
+ Instrucción a la base de datos
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.parametro">
+	<summary>
+ Parametro procedimiento almacenado
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.baseDatos">
+	<summary>
+ Nombre de la base de datos
+ </summary>
+</member><member name="F:plantilla2013vbasic.BaseDatos.stringConexion">
+	<summary>
+ String de conexión
+ </summary>
+</member><member name="M:plantilla2013vbasic.BaseDatos.Conectar_Sin_Datos">
+	<summary>
+ Conectar con base de datos sin parametros.
+ </summary>
+</member><member name="M:plantilla2013vbasic.BaseDatos.cerrar_Conexion">
+	<summary>
+ Cierra conexión con la base de datos
+ </summary>
+</member><member name="M:plantilla2013vbasic.BaseDatos.abrir_Conexion">
+	<summary>
+ Abre conexión con la base de datos
+ </summary>
+</member><member name="M:plantilla2013vbasic.BaseDatos.configure(System.String)">
+	<summary>
+ Constructor copia
+ </summary>
+	<param name="connectionString">String de conexión</param>
+</member><member name="M:plantilla2013vbasic.BaseDatos.crearComando(System.String)">
+	<summary>
+	</summary>
+	<param name="nombreProcedimiento"></param>
+	<returns></returns>
+</member><member name="F:plantilla2013vbasic.detalleMateriales.Form1">
+	<summary>
+Control Form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.detalleMateriales.contenedorGrilla">
+	<summary>
+Control contenedorGrilla.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.Application">
+	<summary>
+ Devuelve información sobre la aplicación actual.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="P:plantilla2013vbasic.My.MyWebExtension.WebServices">
+	<summary>
+ Proporciona acceso a los servicios Web agregados a este proyecto.
+ </summary>
+</member><member name="T:plantilla2013vbasic.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:plantilla2013vbasic.Login.RegisterHyperLink">
+	<summary>
+Control RegisterHyperLink.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Login.LoginUser">
+	<summary>
+Control LoginUser.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.ChangePassword.ChangeUserPassword">
+	<summary>
+Control ChangeUserPassword.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Register.RegisterUser">
+	<summary>
+Control RegisterUser.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Register.RegisterUserWizardStep">
+	<summary>
+Control RegisterUserWizardStep.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.Head1">
+	<summary>
+Control Head1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HeadContent">
+	<summary>
+Control HeadContent.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.Form1">
+	<summary>
+Control Form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.logoSlider">
+	<summary>
+Control logoSlider.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.LinkInicio">
+	<summary>
+Control LinkInicio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink1">
+	<summary>
+Control HyperLink1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink2">
+	<summary>
+Control HyperLink2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink3">
+	<summary>
+Control HyperLink3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink4">
+	<summary>
+Control HyperLink4.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink5">
+	<summary>
+Control HyperLink5.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink6">
+	<summary>
+Control HyperLink6.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.hyperStock">
+	<summary>
+Control hyperStock.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.hyperStock2">
+	<summary>
+Control hyperStock2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.hypercenabast">
+	<summary>
+Control hypercenabast.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.hypercenabast2">
+	<summary>
+Control hypercenabast2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink9">
+	<summary>
+Control HyperLink9.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink7">
+	<summary>
+Control HyperLink7.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.HyperLink8">
+	<summary>
+Control HyperLink8.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.btnCerrarSesion">
+	<summary>
+Control btnCerrarSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.MainContent">
+	<summary>
+Control MainContent.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.Img1">
+	<summary>
+Control Img1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.FooterPlaceHolder">
+	<summary>
+Control FooterPlaceHolder.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.Site.contenedorJavascript">
+	<summary>
+Control contenedorJavascript.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.nroOC">
+	<summary>
+Control nroOC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.buscarMats">
+	<summary>
+Control buscarMats.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.datsEstado">
+	<summary>
+Control datsEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.estadoOC">
+	<summary>
+Control estadoOC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.nroRecepcion">
+	<summary>
+Control nroRecepcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.selecBodegas">
+	<summary>
+Control selecBodegas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.proveedor">
+	<summary>
+Control proveedor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.nroDocumento">
+	<summary>
+Control nroDocumento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.tipoDocumento">
+	<summary>
+Control tipoDocumento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.fechaServidor">
+	<summary>
+Control fechaServidor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.precioOC">
+	<summary>
+Control precioOC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.totalAcumulado">
+	<summary>
+Control totalAcumulado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.observacionOC">
+	<summary>
+Control observacionOC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.observacionDoc">
+	<summary>
+Control observacionDoc.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.contenedorGrilla">
+	<summary>
+Control contenedorGrilla.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.DataGrid1">
+	<summary>
+Control DataGrid1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.footIzqExterno">
+	<summary>
+Control footIzqExterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.footIzqInterno">
+	<summary>
+Control footIzqInterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.precioNetoFoot">
+	<summary>
+Control precioNetoFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.descuentoFoot">
+	<summary>
+Control descuentoFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.valorIvaFoot">
+	<summary>
+Control valorIvaFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.impuestoFoot">
+	<summary>
+Control impuestoFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.totalRecepcionFoot">
+	<summary>
+Control totalRecepcionFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.totalOCFoot">
+	<summary>
+Control totalOCFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.difPesoFoot">
+	<summary>
+Control difPesoFoot.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.footDer">
+	<summary>
+Control footDer.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.DesdeProveedores.guardarRecepcion">
+	<summary>
+Control guardarRecepcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.ModificacionDespacho.numero">
+	<summary>
+Control numero.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.ModificacionDespacho.periodo">
+	<summary>
+Control periodo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.ModificacionDespacho.DataGrid1">
+	<summary>
+Control DataGrid1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.Img1">
+	<summary>
+Control Img1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.listaServidores">
+	<summary>
+Control listaServidores.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.inputUsuario">
+	<summary>
+Control inputUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.inputPassword">
+	<summary>
+Control inputPassword.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.cmd_enviar">
+	<summary>
+Control cmd_enviar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.Button1">
+	<summary>
+Control Button1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.contenedorMensajeError">
+	<summary>
+Control contenedorMensajeError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.login1.mensajeError">
+	<summary>
+Control mensajeError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic.cenabast.DataGrid1">
+	<summary>
+Control DataGrid1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantilla2013vbasic._Default.detalleMaterialGrid">
+	<summary>
+Control detalleMaterialGrid.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

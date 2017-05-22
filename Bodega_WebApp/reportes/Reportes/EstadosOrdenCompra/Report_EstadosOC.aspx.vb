@@ -1,0 +1,15 @@
+﻿Public Class Report_EstadosOC
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        ObjectDataSource1.SelectParameters(0).DefaultValue = Request.QueryString("FechaInicio")
+        ObjectDataSource1.SelectParameters(1).DefaultValue = Request.QueryString("FechaTermino")
+        ObjectDataSource1.SelectParameters(2).DefaultValue = Request.QueryString("Bodega")
+        ObjectDataSource1.SelectParameters(3).DefaultValue = Request.QueryString("Estado")
+        ObjectDataSource1.SelectParameters(4).DefaultValue = Request.QueryString("Proveedor")
+        ObjectDataSource1.SelectParameters(5).DefaultValue = Request.QueryString("TipoBusqueda")
+
+    End Sub
+
+End Class

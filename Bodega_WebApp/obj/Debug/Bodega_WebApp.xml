@@ -1,0 +1,5406 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Bodega_WebApp
+</name>
+</assembly>
+<members>
+<member name="T:Bodega_WebApp.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.Application">
+ <summary>
+ Devuelve información sobre la aplicación actual.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="P:Bodega_WebApp.My.MyWebExtension.WebServices">
+ <summary>
+ Proporciona acceso a los servicios Web agregados a este proyecto.
+ </summary>
+</member>
+<member name="T:Bodega_WebApp.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Bodega_WebApp.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Bodega_WebApp.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Bodega_WebApp.ChangePassword._ChangeUserPassword">
+<summary>
+Control ChangeUserPassword.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Login._RegisterHyperLink">
+<summary>
+Control RegisterHyperLink.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Login._LoginUser">
+<summary>
+Control LoginUser.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Register._RegisterUser">
+<summary>
+Control RegisterUser.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Register._RegisterUserWizardStep">
+<summary>
+Control RegisterUserWizardStep.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.usuario">
+ <summary>
+ Nombre de usuario
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.password">
+ <summary>
+ Password de usuario
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.servidor">
+ <summary>
+ Nombre del servidor
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.conexion">
+ <summary>
+ Conexión con la base de datos
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.dataReader">
+ <summary>
+ Lector de salidas de la base de datos
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.comando">
+ <summary>
+ Instrucción a la base de datos
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.parametro">
+ <summary>
+ Parametro procedimiento almacenado
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.baseDatos">
+ <summary>
+ Nombre de la base de datos
+ </summary>
+</member>
+<member name="F:Bodega_WebApp.BaseDatos.stringConexion">
+ <summary>
+ String de conexión
+ </summary>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.conectar(System.String,System.String,System.String,System.String)">
+ <summary>
+ ''Constructor''
+ </summary>
+ <param name="_usuario">Nombre de usuario</param>
+ <param name="_contraseña">Password de usuario</param>
+ <param name="_servidor">Nombre del servidor</param>
+ <param name="_baseDatos">Nombre de la base de datos</param>
+ <returns></returns>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.Conectar_Sin_Datos">
+ <summary>
+ Conectar con base de datos sin parametros.
+ </summary>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.cerrar_Conexion">
+ <summary>
+ Cierra conexión con la base de datos
+ </summary>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.abrir_Conexion">
+ <summary>
+ Abre conexión con la base de datos
+ </summary>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.configure(System.String)">
+ <summary>
+ Constructor copia
+ </summary>
+ <param name="connectionString">String de conexión</param>
+</member>
+<member name="M:Bodega_WebApp.BaseDatos.crearComando(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="nombreProcedimiento"></param>
+ <returns></returns>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanje">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanje.PRO_QR_RECEPXCANJE_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanje.PRO_QR_RECEPXCANJE_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanje.PRO_QR_RECEPXCANJE_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.PRO_QR_RECEPXCANJE_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_DespaXCanje,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_DespaXCanje,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_DespaXCanje,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_DespaXCanje)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DespaXCanjeTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_PorCanje._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PorCanje._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PorCanje._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PorCanje._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PorCanje._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstitu">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstitu.PRO_QR_DESPA_PRESTAMO_INSTITUCIONES_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstitu.PRO_QR_DESPA_PRESTAMO_INSTITUCIONES_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstitu.PRO_QR_DESPA_PRESTAMO_INSTITUCIONES_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.PRO_QR_DESPA_PRESTAMO_INSTITUCIONES_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_PrestamoOtrasInstitu,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_PrestamoOtrasInstitu,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_PrestamoOtrasInstitu,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_PrestamoOtrasInstitu)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_PrestamoOtrasInstituTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_PrestamoOtrasInstitu._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PrestamoOtrasInstitu._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PrestamoOtrasInstitu._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PrestamoOtrasInstitu._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_PrestamoOtrasInstitu._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamo">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamo.PRO_QR_DESPA_DEVOLUCIONPRESTAMO_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamo.PRO_QR_DESPA_DEVOLUCIONPRESTAMO_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamo.PRO_QR_DESPA_DEVOLUCIONPRESTAMO_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.PRO_QR_DESPA_DEVOLUCIONPRESTAMO_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_XDevolucionDePrestamo,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_XDevolucionDePrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_XDevolucionDePrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_XDevolucionDePrestamo)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_XDevolucionDePrestamoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_XDevolucionDePrestamo1._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_XDevolucionDePrestamo1._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_XDevolucionDePrestamo1._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_XDevolucionDePrestamo1._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_XDevolucionDePrestamo1._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedido">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedido.PRO_QR_DETMOVIMIENTOS_MATERIALESXNROPEDIDO_NEW2015DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedido.PRO_QR_DETMOVIMIENTOS_MATERIALESXNROPEDIDO_NEW2015Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedido.PRO_QR_DETMOVIMIENTOS_MATERIALESXNROPEDIDO_NEW2015RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.PRO_QR_DETMOVIMIENTOS_MATERIALESXNROPEDIDO_NEW2015TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_DevolucionxNroPedido,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_DevolucionxNroPedido,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_DevolucionxNroPedido,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_DevolucionxNroPedido)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxNroPedidoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxNroPedido._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxNroPedido._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxNroPedido._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxNroPedido._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxNroPedido._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamo">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamo.PRO_QR_RECEP_DEVOLUCION_PRESTAMO_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamo.PRO_QR_RECEP_DEVOLUCION_PRESTAMO_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamo.PRO_QR_RECEP_DEVOLUCION_PRESTAMO_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.PRO_QR_RECEP_DEVOLUCION_PRESTAMO_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_DevolucionxPrestamo,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_DevolucionxPrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_DevolucionxPrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_DevolucionxPrestamo)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionxPrestamoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolucionxPrestamo._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolucionxPrestamo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolucionxPrestamo._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolucionxPrestamo._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolucionxPrestamo._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuario">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuario.PRO_QR_DETMOVIMIENTOS_DEVOLUCIONUSUSARIOS_NEW2015DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuario.PRO_QR_DETMOVIMIENTOS_DEVOLUCIONUSUSARIOS_NEW2015Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuario.PRO_QR_DETMOVIMIENTOS_DEVOLUCIONUSUSARIOS_NEW2015RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.PRO_QR_DETMOVIMIENTOS_DEVOLUCIONUSUSARIOS_NEW2015TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_DevolucionXUsuario,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_DevolucionXUsuario,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_DevolucionXUsuario,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_DevolucionXUsuario)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_DevolucionXUsuarioTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolXUsuario._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolXUsuario._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolXUsuario._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolXUsuario._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_DevolXUsuario._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsal">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsal.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsal.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsal.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_ProgramaMinsal)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_ProgramaMinsalTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_ProgramaxMinsal._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_ProgramaxMinsal._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_ProgramaxMinsal._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_ProgramaxMinsal._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_ProgramaxMinsal._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanje">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanje.PRO_QR_RECEPXCANJE_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanje.PRO_QR_RECEPXCANJE_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanje.PRO_QR_RECEPXCANJE_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.PRO_QR_RECEPXCANJE_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_RecepcionXCanje,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_RecepcionXCanje,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_RecepcionXCanje,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_RecepcionXCanje)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionXCanjeTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionXCanje._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionXCanje._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionXCanje._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionXCanje._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionXCanje._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacion">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacion.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacion.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacion.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_RecepXDonacion,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_RecepXDonacion,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_RecepXDonacion,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_RecepXDonacion)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXDonacionTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxDonacion._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxDonacion._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxDonacion._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxDonacion._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionxDonacion._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamo">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamo.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamo.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamo.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.PRO_QR_DETMOVIMIENTOS_ORDENCOMPRA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_RecepXSolicitudPrestamo,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_RecepXSolicitudPrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_RecepXSolicitudPrestamo,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_RecepXSolicitudPrestamo)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepXSolicitudPrestamoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepXSolicitudPrestamo._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepXSolicitudPrestamo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepXSolicitudPrestamo._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepXSolicitudPrestamo._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepXSolicitudPrestamo._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedores">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedores.PRO_QR_RECEPCIONDESDEPROVEEDORES_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedores.PRO_QR_RECEPCIONDESDEPROVEEDORES_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedores.PRO_QR_RECEPCIONDESDEPROVEEDORES_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.PRO_QR_RECEPCIONDESDEPROVEEDORES_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsQR_RecepcionDesdeProveedores,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsQR_RecepcionDesdeProveedores,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsQR_RecepcionDesdeProveedores,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsQR_RecepcionDesdeProveedores)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsQR_RecepcionDesdeProveedoresTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionDesdeProveedores._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionDesdeProveedores._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionDesdeProveedores._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionDesdeProveedores._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.QR_RecepcionDesdeProveedores._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.detalleMateriales._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.detalleMateriales._contenedorGrilla">
+<summary>
+contenedorGrilla control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp._Default._detalleMaterialGrid">
+<summary>
+detalleMaterialGrid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._Img1">
+<summary>
+Control Img1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._listaServidores">
+<summary>
+Control listaServidores.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._inputUsuario">
+<summary>
+Control inputUsuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._inputPassword">
+<summary>
+Control inputPassword.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._cmd_enviar">
+<summary>
+Control cmd_enviar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._contenedorMensajeError">
+<summary>
+Control contenedorMensajeError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.login1._mensajeError">
+<summary>
+Control mensajeError.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.cenabast._DataGrid1">
+<summary>
+DataGrid1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.DownloadExcelGuiasFactura._form1">
+<summary>
+control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuarios">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRpt_DespachoAUsuarios,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRpt_DespachoAUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRpt_DespachoAUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRpt_DespachoAUsuarios)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_DespachoAUsuariosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DesapchoAUsuarios._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DesapchoAUsuarios._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DesapchoAUsuarios._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DesapchoAUsuarios._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DesapchoAUsuarios._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DespXCanje._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DespXCanje._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DespXCanje._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DespXCanje._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DespXCanje._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DevolucionXPrestamo._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DevolucionXPrestamo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DevolucionXPrestamo._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DevolucionXPrestamo._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_DevolucionXPrestamo._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_PrestInstituciones._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_PrestInstituciones._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_PrestInstituciones._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_PrestInstituciones._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_PrestInstituciones._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DespachoXTransferencia._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DespachoXTransferencia._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DespachoXTransferencia._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DespachoXTransferencia._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_DespachoXTransferencia._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NC">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NC.PRO_TB_NOTACREDITO_SELLALL_NEW2015DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NC.PRO_TB_NOTACREDITO_SELLALL_NEW2015Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NC.PRO_TB_NOTACREDITO_SELLALL_NEW2015RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.PRO_TB_NOTACREDITO_SELLALL_NEW2015TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRpt_RecepDP_NC,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRpt_RecepDP_NC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRpt_RecepDP_NC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRpt_RecepDP_NC)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_RecepDP_NCTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepDP_NCReport._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepDP_NCReport._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepDP_NCReport._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepDP_NCReport._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepDP_NCReport._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepcionDesdeProveedores_Report._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepcionDesdeProveedores_Report._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepcionDesdeProveedores_Report._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepcionDesdeProveedores_Report._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_RecepcionDesdeProveedores_Report._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedores)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.Rpt_RecpMateriales_DesdeProveedoresTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuarios">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuarios.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRpt_Recepcion_deUsuarios,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRpt_Recepcion_deUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRpt_Recepcion_deUsuarios,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRpt_Recepcion_deUsuarios)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_deUsuariosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recepcion_deUsuarios._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recepcion_deUsuarios._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recepcion_deUsuarios._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recepcion_deUsuarios._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recepcion_deUsuarios._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedido">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedido.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedido.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedido.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRpt_Recepcion_porNroPedido,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRpt_Recepcion_porNroPedido,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRpt_Recepcion_porNroPedido,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRpt_Recepcion_porNroPedido)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRpt_Recepcion_porNroPedidoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recpecion_porNroPedido._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recpecion_porNroPedido._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recpecion_porNroPedido._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recpecion_porNroPedido._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_Recpecion_porNroPedido._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsal">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsal.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsal.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsal.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_ProgramaMinsal,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_ProgramaMinsal)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaMinsalTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_ProgramaMinsal._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_ProgramaMinsal._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_ProgramaMinsal._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_ProgramaMinsal._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_ProgramaMinsal._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xCanje._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xCanje._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xCanje._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xCanje._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xCanje._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_RecepXSoliPrestamo._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_RecepXSoliPrestamo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_RecepXSoliPrestamo._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_RecepXSoliPrestamo._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_RecepXSoliPrestamo._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDevoluDePrestamo._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDevoluDePrestamo._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDevoluDePrestamo._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDevoluDePrestamo._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDevoluDePrestamo._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacion">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacion.PRO_INFORME_TRANSACCIONES_SEL_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacion.PRO_INFORME_TRANSACCIONES_SEL_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacion.PRO_INFORME_TRANSACCIONES_SEL_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacionTableAdapters.PRO_INFORME_TRANSACCIONES_SEL_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_xDonacion,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_xDonacion,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_xDonacion,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_xDonacion)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_xDonacionTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDonacion._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDonacion._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDonacion._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDonacion._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_xDonacion._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExist">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExist.PRO_RPT_AJUSTE_MATERIALES_net2015DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExist.PRO_RPT_AJUSTE_MATERIALES_net2015Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExist.PRO_RPT_AJUSTE_MATERIALES_net2015RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.PRO_RPT_AJUSTE_MATERIALES_net2015TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_AjusteExist,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_AjusteExist,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_AjusteExist,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_AjusteExist)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_AjusteExistTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Rpt_AjusteExistencia_viewAjuste._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_AjusteExistencia_viewAjuste._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_AjusteExistencia_viewAjuste._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_AjusteExistencia_viewAjuste._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Rpt_AjusteExistencia_viewAjuste._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_AjusteMaterial._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_AjusteMaterial._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_AjusteMaterial._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_AjusteMaterial._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.RptVentana_AjusteMaterial._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_Bincard">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_Bincard.PRO_ALL_TEMP_BINCARD_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_Bincard.PRO_ALL_TEMP_BINCARD_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_Bincard.PRO_ALL_TEMP_BINCARD_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_BincardTableAdapters.PRO_ALL_TEMP_BINCARD_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_Bincard,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_Bincard,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_Bincard,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_Bincard)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_BincardTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_Bincard._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_Bincard._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_Bincard._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_Bincard._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_Bincard._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStock">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStock.PRO_RPT_PROGRAMACOMPRA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStock.PRO_RPT_PROGRAMACOMPRA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStock.PRO_RPT_PROGRAMACOMPRA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.PRO_RPT_PROGRAMACOMPRA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_ConsXBodegaStock,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_ConsXBodegaStock,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_ConsXBodegaStock,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_ConsXBodegaStock)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsXBodegaStockTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsXBodegaStock._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsXBodegaStock._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsXBodegaStock._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsXBodegaStock._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsXBodegaStock._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCosto">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCosto.PRO_RPT_CONSUMO_CENTROCOSTO_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCosto.PRO_RPT_CONSUMO_CENTROCOSTO_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCosto.PRO_RPT_CONSUMO_CENTROCOSTO_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.PRO_RPT_CONSUMO_CENTROCOSTO_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_ConsumoXCCosto,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_ConsumoXCCosto,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_ConsumoXCCosto,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_ConsumoXCCosto)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsumoXCCostoTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsumoXCCosto._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsumoXCCosto._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsumoXCCosto._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsumoXCCosto._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsumoXCCosto._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompra">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompra.PRO_RPT_PROGRAMACOMPRA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompra.PRO_RPT_PROGRAMACOMPRA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompra.PRO_RPT_PROGRAMACOMPRA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.PRO_RPT_PROGRAMACOMPRA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_ProgramaCompra,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_ProgramaCompra,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_ProgramaCompra,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_ProgramaCompra)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ProgramaCompraTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_ProgramaCompra._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ProgramaCompra._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ProgramaCompra._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ProgramaCompra._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ProgramaCompra._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABAST">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABAST.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABAST.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABAST.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_DespaMandatoCENABAST,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_DespaMandatoCENABAST,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_DespaMandatoCENABAST,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_DespaMandatoCENABAST)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaMandatoCENABASTTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaMandatoCENABAST._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaMandatoCENABAST._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaMandatoCENABAST._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaMandatoCENABAST._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaMandatoCENABAST._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPauta">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPauta.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPauta.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPauta.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.PRO_RPT_DESPACHOXPAUTA_Y_MANDATOCENABAST_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_DespaXPauta,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_DespaXPauta,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_DespaXPauta,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_DespaXPauta)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXPautaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_DespachoXPauta._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespachoXPauta._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespachoXPauta._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespachoXPauta._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespachoXPauta._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CC">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.PRO_RPT_DESPACHOSXSERVICIO_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_DespaXServicio_D1CC,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_DespaXServicio_D1CC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_DespaXServicio_D1CC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_DespaXServicio_D1CC)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_D1CCTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_D1CC._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_D1CC._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_D1CC._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_D1CC._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_D1CC._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CC">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CC.PRO_RPT_DESPACHOSXSERVICIO_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.PRO_RPT_DESPACHOSXSERVICIO_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_DespaXServicio_R1CC,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_DespaXServicio_R1CC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_DespaXServicio_R1CC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_DespaXServicio_R1CC)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_DespaXServicio_R1CCTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_R1CC1._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_R1CC1._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_R1CC1._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_R1CC1._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_DespaXServicio_R1CC1._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOC">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOC.PRO_REPORTE_OC_RECEPCION_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOC.PRO_REPORTE_OC_RECEPCION_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOC.PRO_REPORTE_OC_RECEPCION_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.PRO_REPORTE_OC_RECEPCION_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_EstadosOC,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_EstadosOC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_EstadosOC,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_EstadosOC)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_EstadosOCTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_EstadosOC._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_EstadosOC._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_EstadosOC._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_EstadosOC._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_EstadosOC._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterial">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterial.PRO_RPT_FVTO_XPERIODOMATERIAL_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterial.PRO_RPT_FVTO_XPERIODOMATERIAL_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterial.PRO_RPT_FVTO_XPERIODOMATERIAL_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.PRO_RPT_FVTO_XPERIODOMATERIAL_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_FVto_PeriodoMaterial,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_FVto_PeriodoMaterial,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_FVto_PeriodoMaterial,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_FVto_PeriodoMaterial)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_FVto_PeriodoMaterialTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_FVto_PeriodoMaterial._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_FVto_PeriodoMaterial._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_FVto_PeriodoMaterial._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_FVto_PeriodoMaterial._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_FVto_PeriodoMaterial._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistencia">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistencia.PRO_RPT_EXISTENCIA_REALXFAMILIA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistencia.PRO_RPT_EXISTENCIA_REALXFAMILIA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistencia.PRO_RPT_EXISTENCIA_REALXFAMILIA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.PRO_RPT_EXISTENCIA_REALXFAMILIA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_InveRealExistencia,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_InveRealExistencia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_InveRealExistencia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_InveRealExistencia)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveRealExistenciaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_InveRealExistencia._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveRealExistencia._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveRealExistencia._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveRealExistencia._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveRealExistencia._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamilia">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamilia.PRO_RPT_CALCULAEXISTENCIAXFAMILIA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamilia.PRO_RPT_CALCULAEXISTENCIAXFAMILIA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamilia.PRO_RPT_CALCULAEXISTENCIAXFAMILIA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.PRO_RPT_CALCULAEXISTENCIAXFAMILIA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_InveXFamilia,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_InveXFamilia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_InveXFamilia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_InveXFamilia)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXFamiliaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXFamilia._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXFamilia._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXFamilia._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXFamilia._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXFamilia._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem.PRO_RPT_INVENTARIOXITEM_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem.PRO_RPT_INVENTARIOXITEM_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem.PRO_RPT_INVENTARIOXITEM_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItemTableAdapters.PRO_RPT_INVENTARIOXITEM_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_InveXItem,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_InveXItem,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_InveXItem,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_InveXItem)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItemTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2.PRO_RPT_INVENTARIOXITEM_RESUMEN_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2.PRO_RPT_INVENTARIOXITEM_RESUMEN_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2.PRO_RPT_INVENTARIOXITEM_RESUMEN_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.PRO_RPT_INVENTARIOXITEM_RESUMEN_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_InveXItem2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_InveXItem2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_InveXItem2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_InveXItem2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_InveXItem2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem2._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem2._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem2._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem2._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_InveXItem2._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_MatFar_SinMov">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_MatFar_SinMov._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_MatFar_SinMov._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_MatFar_SinMov._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_MatFar_SinMov._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_MatFar_SinMov._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificados">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificados.PRO_RPT_PEDIDOSNOPLAN_X_BODEGA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificados.PRO_RPT_PEDIDOSNOPLAN_X_BODEGA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificados.PRO_RPT_PEDIDOSNOPLAN_X_BODEGA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.PRO_RPT_PEDIDOSNOPLAN_X_BODEGA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_PedidosNoPlanificados,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_PedidosNoPlanificados,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_PedidosNoPlanificados,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_PedidosNoPlanificados)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_PedidosNoPlanificadosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_PedidoNoPlanificado._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_PedidoNoPlanificado._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_PedidoNoPlanificado._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_PedidoNoPlanificado._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_PedidoNoPlanificado._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_Max">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_Max.PRO_STOCK_CRITICO_MIN_MAX_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_Max.PRO_STOCK_CRITICO_MIN_MAX_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_Max.PRO_STOCK_CRITICO_MIN_MAX_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.PRO_STOCK_CRITICO_MIN_MAX_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_StockCritico_Min_Max,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_StockCritico_Min_Max,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_StockCritico_Min_Max,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_StockCritico_Min_Max)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_StockCritico_Min_MaxTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Repot_StockCritico_MinMax._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Repot_StockCritico_MinMax._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Repot_StockCritico_MinMax._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Repot_StockCritico_MinMax._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Repot_StockCritico_MinMax._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransf">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransf.PRO_REPORTE_MENS_TRANSF_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransf.PRO_REPORTE_MENS_TRANSF_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransf.PRO_REPORTE_MENS_TRANSF_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.PRO_REPORTE_MENS_TRANSF_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_ConsolidadoMensualTransf,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_ConsolidadoMensualTransf,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_ConsolidadoMensualTransf,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_ConsolidadoMensualTransf)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_ConsolidadoMensualTransfTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsolidadoMensualTBod._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsolidadoMensualTBod._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsolidadoMensualTBod._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsolidadoMensualTBod._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_ConsolidadoMensualTBod._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegas">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegas.PRO_REPORTE_TRANSFERENCIAS_BODEGAS_netDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegas.PRO_REPORTE_TRANSFERENCIAS_BODEGAS_netRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegas.PRO_REPORTE_TRANSFERENCIAS_BODEGAS_netRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.PRO_REPORTE_TRANSFERENCIAS_BODEGAS_netTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsRPT_TransfEntreBodegas,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsRPT_TransfEntreBodegas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsRPT_TransfEntreBodegas,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsRPT_TransfEntreBodegas)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsRPT_TransfEntreBodegasTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegas._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegas._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegas._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegas._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegas._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegasDetalle._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegasDetalle._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegasDetalle._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegasDetalle._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_TransfEntreBodegasDetalle._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergencia">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergencia.PRO_STOCK_EMERGENCIA_NET2014DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergencia.PRO_STOCK_EMERGENCIA_NET2014Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergencia.PRO_STOCK_EMERGENCIA_NET2014RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergenciaTableAdapters.PRO_STOCK_EMERGENCIA_NET2014TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.UpdateUpdatedRows(Bodega_WebApp.dsStockEmergencia,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.UpdateInsertedRows(Bodega_WebApp.dsStockEmergencia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.UpdateDeletedRows(Bodega_WebApp.dsStockEmergencia,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.UpdateAll(Bodega_WebApp.dsStockEmergencia)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Bodega_WebApp.dsStockEmergenciaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Bodega_WebApp.Report_StockEmergencia._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_StockEmergencia._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_StockEmergencia._ScriptManager">
+<summary>
+ScriptManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_StockEmergencia._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Report_StockEmergencia._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HeadContent">
+<summary>
+HeadContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._logoSlider">
+<summary>
+logoSlider control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._LinkInicio">
+<summary>
+LinkInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink1">
+<summary>
+HyperLink1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._UsuariosProveedores">
+<summary>
+UsuariosProveedores control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._facturasAGuiasDespacho">
+<summary>
+facturasAGuiasDespacho control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._DevolucionXNumeroPedido">
+<summary>
+DevolucionXNumeroPedido control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._DevolucionXUsuarios">
+<summary>
+DevolucionXUsuarios control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink11">
+<summary>
+HyperLink11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink10">
+<summary>
+HyperLink10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink12">
+<summary>
+HyperLink12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink13">
+<summary>
+HyperLink13 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink16">
+<summary>
+HyperLink16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._DespAUsuarios">
+<summary>
+DespAUsuarios control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._ModificacionDespacho">
+<summary>
+ModificacionDespacho control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._Transferencias">
+<summary>
+Transferencias control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink8">
+<summary>
+HyperLink8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink17">
+<summary>
+HyperLink17 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink14">
+<summary>
+HyperLink14 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink15">
+<summary>
+HyperLink15 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._hyperStock">
+<summary>
+hyperStock control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._hyperStock2">
+<summary>
+hyperStock2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._hypercenabast">
+<summary>
+hypercenabast control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._hypercenabast2">
+<summary>
+hypercenabast2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink9">
+<summary>
+HyperLink9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink20">
+<summary>
+HyperLink20 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink23">
+<summary>
+HyperLink23 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink7">
+<summary>
+HyperLink7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink18">
+<summary>
+HyperLink18 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink24">
+<summary>
+HyperLink24 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink25">
+<summary>
+HyperLink25 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink26">
+<summary>
+HyperLink26 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._despachoAusuarios">
+<summary>
+despachoAusuarios control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink4">
+<summary>
+HyperLink4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink3">
+<summary>
+HyperLink3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink2">
+<summary>
+HyperLink2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._transferenciasBodegas">
+<summary>
+transferenciasBodegas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._consolidadoMensual">
+<summary>
+consolidadoMensual control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink19">
+<summary>
+HyperLink19 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink21">
+<summary>
+HyperLink21 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink6">
+<summary>
+HyperLink6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink27">
+<summary>
+HyperLink27 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink5">
+<summary>
+HyperLink5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._HyperLink22">
+<summary>
+HyperLink22 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._btnCerrarSesion">
+<summary>
+btnCerrarSesion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._MainContent">
+<summary>
+MainContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._Img1">
+<summary>
+Img1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._FooterPlaceHolder">
+<summary>
+FooterPlaceHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Bodega_WebApp.Site._contenedorJavascript">
+<summary>
+contenedorJavascript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

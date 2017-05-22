@@ -1,0 +1,71 @@
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.Designer.vb
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.vb
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.Designer.vb
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsc
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsd
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xss
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsc
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsd
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xss
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\plantilla2013vbasic.dll.config
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\plantilla2013vbasic.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\plantilla2013vbasic.pdb
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\plantilla2013vbasic.xml
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\DocumentFormat.OpenXml.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Configuration.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Data.DataSetExtensions.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Data.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Drawing.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.EnterpriseServices.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.ApplicationServices.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.DynamicData.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.Entity.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.Extensions.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Web.Services.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Xml.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\bin\System.Xml.Linq.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\Bodega_WebApp.vbprojResolveAssemblyReference.cache
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\plantilla2013vbasic.Resources.resources
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\Bodega_WebApp.vbproj.GenerateResource.Cache
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\RdlCompile.cache
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\RdlCompile.compiled
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\plantilla2013vbasic.dll
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\plantilla2013vbasic.xml
+C:\Users\Informática\Desktop\Mix 4.8 - Lector QR v1.0 - mod. Libreria w2ui\plantilla2013vbasic\obj\Debug\plantilla2013vbasic.pdb
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.Designer.vb
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.vb
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.Designer.vb
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsc
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xsd
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Despachos\DespachoUsuarios\dsRpt_DespachoAUsuarios.xss
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsc
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xsd
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\reportes\Recepciones\xDonacion\dsRPT_xDonacion.xss
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Configuration.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Data.DataSetExtensions.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Data.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Drawing.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.EnterpriseServices.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.ApplicationServices.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.DynamicData.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.Entity.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.Extensions.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Web.Services.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Xml.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\System.Xml.Linq.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.vbprojResolveAssemblyReference.cache
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.vbproj.GenerateResource.Cache
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\RdlCompile.cache
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\RdlCompile.compiled
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\Bodega_WebApp.dll.config
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\Bodega_WebApp.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\Bodega_WebApp.pdb
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\bin\Bodega_WebApp.xml
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.Resources.resources
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.dll
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.xml
+C:\Users\Informática\Desktop\Sistema de Bodega 2.0\Bodega_WebApp\obj\Debug\Bodega_WebApp.pdb

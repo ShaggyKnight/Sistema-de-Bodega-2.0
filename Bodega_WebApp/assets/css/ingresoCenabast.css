@@ -1,0 +1,231 @@
+﻿.botonMas
+{
+    background-image:url("../imagenes/general/circle_plus.png");
+    text-align: center;
+    background-position: 50% 0;
+    border: 0;
+    width:22px;
+    background-color: transparent;
+}
+.contenedorPrincipal
+{
+width: 100%; border-left: 1px solid #0059B2; border-right: 1px solid #0059B2;
+            text-align: center;
+}
+.textoCompra input
+{
+    height: 100%;
+    width: 100%;
+}
+.textoCompra select
+{
+    height: 100%;
+    width: 100%;
+}
+.contenedorContenido
+{
+	border-top: 1px solid #0059B2;
+}
+.contenedorTitulos
+{
+	margin-top: 10px;
+}
+.tituloDetalleCompraCantidad
+{
+	height: 20px; float: left; width: 20%; border-right: 1px solid white;
+}
+
+.tituloDetalleCompraLote
+{
+	height: 20px; float: left; width: 20%; border-right: 1px solid white;
+}
+
+.tituloDetalleCompraSerie
+{
+	height: 20px; float: left; width: 20%; border-right: 1px solid white;
+}
+
+.tituloDetalleCompraVencimiento
+{
+	height: 20px; float: left; width: 40%
+}
+.detalleCompraCantidad input
+{
+    height:100%;
+    width:100%;
+}
+.detalleCompraLote input
+{
+    height:100%;
+    width:100%;
+}
+.detalleCompraSerie input
+{
+    height:100%;
+    width:100%;
+}
+.detalleCompraVencimiento input
+{
+    height:100%;
+    width:100%;
+}
+.detalleCompraLote
+{
+	height: 26px; float: left; width: 20%; border-right: 1px solid #0059B2;
+}
+
+.detalleCompraSerie
+{
+	height: 26px; float: left; width: 20%; border-right: 1px solid #0059B2;
+}
+
+.detalleCompraVencimiento
+{
+	height: 26px; float: left; width: 40%
+}
+
+.sangriaDetalleCompra
+{
+	height: 26px; 
+	float: left; 
+	width: 40%;
+	text-align:right;
+}
+
+.contenedorDetalleCompra
+{
+	height: 26px; float: left; width: 60%
+}
+.sobre:hover
+{
+    color: Green;
+}
+.contenedorCompra
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: White;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #0059B2;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+.lineaTituloDetalleDeCompra
+{
+    border-top:1px solid #0059B2;
+}
+.sangriaTituloDetalleCompra
+{
+    height: 35px;
+    float: left; 
+    width: 40%;
+}
+.contenedorTituloDetalleCompra
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: White !important;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #0059B2;
+    border: 1px solid black;
+    border-bottom: 0px;
+    height: 35px;
+    float: left;
+    width: 60%;
+}
+.detalleCompraCantidad
+{
+    height: 26px;
+    float: left; 
+    width: 20%; 
+    border-right: 1px solid #0059B2;
+}
+#finalContenedorCompra
+{
+    height: 10px;
+    width: 100%;
+    border: 1px solid #0059B2;
+    border-top: 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#finalPagina
+{
+    height: 100px;
+}
+.tituloCompra
+{
+    height: 40px;
+    float: left;
+    border-right: 1px solid white;
+}
+.ultimoTituloCompra
+{
+    height: 40px;
+    float: left;
+}
+.textoCompra
+{
+    height: 30px;
+    float: left;
+    border-right: 1px solid #006DD9;
+    background-color:White;
+}
+.sangriaVertical
+{
+    margin-top: 10px;
+}
+.altoFinal
+{
+    height: 9px !important;
+}
+.primeraColumna
+{
+    width: 10%;
+}
+.segundaColumna
+{
+    width: 20%;
+}
+.terceraColumna
+{
+    width: 10%;
+}
+.cuartaColumna
+{
+    width: 10%;
+}
+.quintaColumna
+{
+    width: 10%;
+}
+.sextaColumna
+{
+    width: 10%;
+}
+.septimaColumna
+{
+    width: 10%;
+}
+.octavaColumna
+{
+    width: 10%;
+}
+.novenaColumna
+{
+    width: 10%;
+}
